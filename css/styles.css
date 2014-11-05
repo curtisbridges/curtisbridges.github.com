@@ -4,6 +4,7 @@ body {
   font-family: helvetica;
   background: url("../images/summer-bg.jpg");
   background-size: cover;
+  background-attachment: fixed;
   background-color: #264;
 }
 
@@ -17,7 +18,7 @@ a {
 }
 
 #logo {
-	margin: 10px;
+	margin: 10px auto;
 	display: block;
 }
 
@@ -26,13 +27,28 @@ a {
 	display: inline;
 }
 
-#navigation {
+#nav {
 	padding: 15px;
 	margin: 0px auto;
 	text-align: center;
+/*	background-color: 222;*/
 }
 
-.navItem {
+#nav li {
+	color: #eee;
 	display: inline;
 	margin: 0px 4px;
+/*	background-color: #f2f2f2;*/
+	border-bottom: 1px solid #ccc;
+/*	border-top: 1px solid #ccc;*/
+}
+
+#nav li a {
+	text-decoration: none;
+}
+
+#nav li a:hover {
+	color: #11e;
+	text-decoration: bold;
+	background-color: #ccc; 
 }
