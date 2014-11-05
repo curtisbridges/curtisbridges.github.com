@@ -9,50 +9,28 @@
     <meta name="author" content="Curtis Bridges">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <style>
-		body {
-        text-align: center;
-        background: url("images/summer-bg.jpg");
-        background-size: cover;
-  /*      background-repeat: no-repeat; */
-  /*      background-position: center; */
-        color: white;
-        font-family: helvetica;
-      }
-      p {
-        font-size: 20px;
-        padding: 0px 0px 0px 0px;
-      }
-      input {
-        border: 0;
-        padding: 10px;
-      }
-      input[type="submit"] {
-        background: red;
-        color: white;
-      }
-      a {
-        color: white;
-      }
-      img {
-        padding: 10px 2px 10px 2px;
-      }
-    </style>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   
-  <body>
+  <body style="background: url("images/summer-bg.jpg");background-size: cover;">
+	  
+	<header>
+		<ul id="navigation">
+			<li class="navItem"><a href="http://blog.curtisbridges.com" title="Blog">Blog</a></li>
+			<li class="navItem"><a href="https://twitter.com/curtisbridges" title="Twitter">Twitter</a></li>
+			<li class="navItem"><a href="https://github.com/curtisbridges" title="GitHub">GitHub</a></li>
+		</ul>
+	</header>  
     
 	<a href="http://blog.curtisbridges.com" title="Blog">
-		<img src="images/avatar_128.png" alt="Avatar">
+		<img id="logo" src="images/avatar_128.png" alt="Avatar">
 	</a>
 	
-    <h1>Curtis Bridges</h1>
-    <p>Hi! I'm Curtis, a NH-based developer.</p> 
+    <div id="name">Curtis Bridges</div>
+    <p>Hi! I'm Curtis, a New Hampshire based developer.</p> 
 	<p>You can find me at these social media sites below or check out my 
 		<a href="http://blog.curtisbridges.com/">blog</a>.
 	</p>
-<!--<input type="email" placeholder="Your email">
-    <input type="submit"> -->
 
     <a href="http://blog.curtisbridges.com" title="Blog">
 		<img src="images/att-flat-social/png/color-square/tumblr.png" alt="Tumblr"/>
