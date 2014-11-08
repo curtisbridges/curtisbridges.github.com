@@ -1,23 +1,19 @@
 body {
-  text-align: center;
-  color: white;
-  font-family: helvetica;
-  background: url("../images/summer-bg.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: #264;
+	color: white;
+	font-family: helvetica;
+	background: url("../images/summer-bg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #264;
 }
 
 a {
-  color: white;
-}
-
-div {
-	display: inline;
+	color: white;
 }
 
 p {
-	margin: 10px;
+/*	display: inline-block;*/
+	margin: 0px 10px 10px 10px;
 }
 
 #nav {
@@ -46,42 +42,74 @@ p {
 }
 
 #content {
-	margin-top: 5%;
-	display: block;
+/*	display: block;*/
+	margin: 5% auto 0px auto;
+	width: 60%;
+/*	margin-left: auto;*/
+/*	margin-right: auto;*/
 }
 
 #identity {
-	display: inline-block;
-}
-
-#logo {
-	border-radius: 4px;
-/*	margin-bottom: 10px;*/
-/*	display: block;*/
+	display: block;
+	margin: 15px;
 }
 
 #name {
-/*	font-size: 200%;*/
-/*	display: block;*/
+/*	margin-left: 5px;*/
+	display: inline;
+}
+
+#twitter {
+	text-decoration: none;
+}
+
+#middle {
+	display: inline-block;
+	margin: 10px auto;
+/*	width: 80%;*/
+}
+
+#logo {
+	float: left;
+	margin-right: 10px;
+	border-radius: 4px;
 }
 
 #message {
+	margin: 15px;
+/*	display: inline-block;*/
+/*	float: right;*/
+/*	width: 80%;*/
+/*	margin: 0px 10px;*/
+/*	padding: 0px 5px;*/
+/*	text-align: left;*/
+/*	vertical-align: top;*/
+}
+
+#social {
 	display: inline-block;
-	padding: 0px 5px;
-	text-align: left;
-	width: 400px;
-	vertical-align: top;
+	width: 100%;
+	text-align: center;
 }
 
-.shadowed {
-	border-radius: 2px;
-	box-shadow: 5px 5px 5px #444;
-}
-
-.backed-text {
-	background-color: #676;
+#social li {
+	display: inline;
 }
 
 #social a {
 	text-decoration: none;
+}
+
+#email {
+	width: 100%;
+	text-align: center;
+}
+
+.shadowed {
+	border-radius: 2px;
+	box-shadow: 2px 2px 2px #444;
+}
+
+.backed-text {
+	background-color: #676;
 }
