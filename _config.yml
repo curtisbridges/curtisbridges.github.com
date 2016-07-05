@@ -1,16 +1,19 @@
 # Site settings
-title: Curtis Bridges - Developer
+title: Curtis Bridges
 email: curtis@curtisbridges.com
 description: > # this means to ignore newlines until "baseurl:"
-    Here are a few of my favorite things: Software, Development,
-    Learning, Reading, Writing, Photography, and Sports
+    Software, Development,
+    Learning, Reading, Writing,
+    Photography, and Sports
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://curtisbridges.com" # the base hostname & protocol for your site
-#url: https://alexcican.com
-#enforce_ssl: alexcican.com
+#url: https://curtisbridges.com
+#enforce_ssl: curtisbridges.com
+
 permalink: pretty
 twitter_username: curtisbridges
 github_username:  curtisbridges
-exclude: [font-awesome]
+
 # Build settings
 markdown: kramdown
