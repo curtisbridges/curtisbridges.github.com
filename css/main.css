@@ -40,7 +40,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 html { width: 80%; margin: auto; }
 html, body { height: 100%; }
 body {
-  display: table;
+  display: flex;
   flex-direction: column;
   width: 100%;
 }
@@ -48,18 +48,20 @@ body {
 header {
   background-color: rgba(105, 105, 105, 0.1); /* DimGray */
   border-radius: 5px;
-  padding: 0 10px 0 10px;
-  display: table;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   margin-top: 50px;
   width: 100%;
+  min-height: 50px;
 }
 
-header h2 { display: table-cell; margin: 0; white-space: nowrap; }
-nav { display: table-cell; text-align: right; white-space: nowrap; }
+header h2 { display: block; margin: 0; white-space: nowrap; padding-left: 10px }
+nav { display: block; text-align: right; white-space: nowrap; padding-right: 10px }
 nav a { padding-left: 20px; }
 
 footer {
-  display: table-footer-group;
+  display: inline-block;
   padding-top: 20px;
   text-align: center;
 }
@@ -68,22 +70,17 @@ footer {
 .current {
   color: #ff3300;
 }
+
 #homepage {
   color: #ff3300;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-  height: 100%;
 }
 
 .content {
   height: 100%;
   max-width: 600px;
   margin: 25px 0 25px 0;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .shadowed {
@@ -139,7 +136,11 @@ footer a:hover:after {
 /* media queries */
 @media only screen and (max-device-width: 480px) {
   html { width: 95%; margin: auto; }
-  header h2 { display: block; }
-  nav { display: block; text-align: left; }
+  header { width: 100%; }
+  header h2 { display: block; padding-left: 5px; }
+  nav { display: block; text-align: left; padding-left: 5px; }
   nav a { padding-left: 0px; padding-right: 10px; }
+  .content {
+    background-color: rgba(105, 105, 105, 0.4); /* DimGray */
+  }
 }
