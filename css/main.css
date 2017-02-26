@@ -68,6 +68,9 @@ footer {
 .current {
   color: #ff3300;
 }
+#homepage {
+  color: #ff3300;
+}
 
 .wrapper {
   display: flex;
