@@ -143,4 +143,5 @@ footer a:hover:after {
   .content {
     background-color: rgba(105, 105, 105, 0.4); /* DimGray */
   }
+  a:after { display: none; }
 }
