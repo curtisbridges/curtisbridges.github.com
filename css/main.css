@@ -54,8 +54,8 @@ header {
   width: 100%;
 }
 
-header h2 { display: table-cell; margin: 0 }
-nav { display: table-cell; text-align: right; }
+header h2 { display: table-cell; margin: 0; white-space: nowrap; }
+nav { display: table-cell; text-align: right; white-space: nowrap; }
 nav a { padding-left: 20px; }
 
 footer {
@@ -131,4 +131,12 @@ footer a:hover:after {
     content:"";
     display:table;
     clear:both;
+}
+
+/* media queries */
+@media only screen and (max-device-width: 480px) {
+  html { width: 95%; margin: auto; }
+  header h2 { display: block; }
+  nav { display: block; text-align: left; }
+  nav a { padding-left: 0px; padding-right: 10px; }
 }
