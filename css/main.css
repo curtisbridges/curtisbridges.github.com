@@ -2,7 +2,7 @@
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
-body { font: 400 18px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; color: #eee; background-color: #111; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; }
+body { font: 400 20px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%; color: DimGrey; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure { margin-bottom: 15px; }
@@ -19,8 +19,8 @@ li > ul, li > ol { margin-bottom: 0; }
 h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
 /** Links */
-a { color: lightgrey; text-decoration: none; }
-a:visited { color: lightgrey }
+a { color: DarkSlateGray; text-decoration: none; }
+a:visited { color: DarkSlateGray; }
 a:hover { color: #ff3300; }
 
 /** Blockquotes */
@@ -43,29 +43,26 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  background-color: rgba(105, 105, 105, 0.1); /* DimGray */
+  border-radius: 5px;
+  padding: 0 10px 0 10px;
+  display: table;
   margin-top: 50px;
+  width: 100%;
 }
 
+header h2 { display: table-cell; margin: 0 }
+nav { display: table-cell; text-align: right; }
 nav a { padding-left: 20px; }
 
 footer {
   padding-top: 20px;
-  /*position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;*/
   text-align: center;
 }
 
 /** My classes **/
-.active {
+.current {
   color: #ff3300;
-}
-.headerText {
-  font-size: 200%;
 }
 
 .wrapper {
@@ -75,11 +72,16 @@ footer {
   justify-content: center;
   height: 100%;
 }
-.expander { flex-grow: 1; }
+
 .content {
-  flex-grow: 0;
-  max-width: 400px;
-  /*margin-left: 50px;*/
+  height: 100%;
+  max-width: 600px;
+  margin: 25px 0 25px 0;
+}
+
+.shadowed {
+  border-radius: 2px;
+  box-shadow: 5px 5px 5px #444;
 }
 
 .social {
@@ -93,8 +95,6 @@ footer {
 footer { text-align: left; }
 footer ul { margin-left: 0px; }
 footer li { padding: 5px; }
-
-
 
 /** Hover underline **/
 a {
@@ -120,4 +120,11 @@ a:hover:after {
 
 footer a:hover:after {
   background: transparent;
+}
+
+/* clearfix */
+.clearfix:after {
+    content:"";
+    display:table;
+    clear:both;
 }
