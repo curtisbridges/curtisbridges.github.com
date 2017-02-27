@@ -70,8 +70,11 @@ footer {
 #homepage {
   color: #ff3300;
 }
-
-.content {
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
   height: 100%;
   max-width: 600px;
   margin: 25px 0 25px 0;

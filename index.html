@@ -34,14 +34,18 @@
         -o-background-size: cover;
       }
       body {
-        background-color: rgba(105, 105, 105, 0.5);
-        border-radius: 5px;
+        /*background-color: rgba(105, 105, 105, 0.5);
+        border-radius: 5px;*/
       }
       a { color: white; text-decoration: none; }
       a:visited { color: rgba(225, 225, 225, 0.5) }
       a:hover { color: #ff3300; }
       /*header { background-color: rgba(112, 128, 144, 0.4); }*/
       /*header { background-color: rgba(105,105,105, 0.4); }*/
+      .container > div {
+        flex-basis: 50%;
+        /*align-self: flex-end;*/
+      }
     </style>
   </head>
 
@@ -59,9 +63,11 @@
       </nav>
     </header>
 
-    <div class="content">
-      <h1>Hi.</h1>
-      I'm a freelance iOS developer based in New Hampshire.
+    <div class="container">
+      <div>
+        <h1>Hi.</h1>
+        I'm a freelance iOS developer based in New Hampshire.
+      </div>
     </div>
 
     <footer>
