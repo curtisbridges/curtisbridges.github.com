@@ -2,13 +2,13 @@
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
-body { font: 400 20px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -webkit-font-smoothing: antialiased; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal;}
+body { font: 400 20px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -webkit-font-smoothing: antialiased; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; background-color: whitesmoke;}
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure { margin-bottom: 15px; }
 
 /** Images */
-img { max-width: 100%; vertical-align: middle; }
+/*img { max-width: 100%; vertical-align: middle; }*/
 
 /** Lists */
 ul, ol { margin-left: 30px; }
@@ -35,43 +35,47 @@ code { padding: 1px 5px; }
 pre { padding: 8px 12px; overflow-x: auto; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
-html { width: 80%; height: 100%; margin: auto; }
+html { width: auto; }
 body {
   display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  width: 100%;
 }
 
-header { flex: 0; }
+header { margin-top: 20px; flex: 0; }
 header h1 { margin: 0; white-space: nowrap; padding-right: 25px; display: inline; }
 nav { display: inline-block; text-align: right; white-space: nowrap; padding-right: 10px; position: relative; right: 0 }
 nav a { padding-left: 20px; }
 
-footer { }
 
 /** My classes **/
-#current {
-  color: #ff3300;
-  /*text-decoration: underline;*/
-}
-
-#homepage {
+#current, #homepage {
   color: #ff3300;
 }
 
+.content {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 400px;
+  max-width: 800px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
 .container {
   flex: 1;
-  height: 100%;
-  max-width: 800px;
   margin: 25px 0 25px 0;
-  border-radius: 5px;
   padding: 5px;
+  height: 100%;
 }
-
 .project {
   clear: both;
+  display: table;
   margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px dotted silver;
+}
+.project:last-child {
+  border-bottom: none;
 }
 .project-header {
   margin-bottom: 20px;
@@ -97,6 +101,11 @@ footer { }
   color: orangered; /* Or a color you prefer */
 }
 
+/* Image related */
+.sidebanner {
+  float: right;
+  overflow-y: visible;
+}
 .thumbnail {
   max-width: 400px;
   box-shadow: 2px 2px 10px #888;
@@ -107,6 +116,7 @@ footer { }
 
 .social {
   display: block;
+  white-space: nowrap;
 }
 .social li {
   list-style: none;
@@ -115,7 +125,7 @@ footer { }
 
 footer { text-align: left; }
 footer ul { margin-left: 0px; }
-footer li { padding: 5px; }
+footer li { padding-right: 5px; }
 
 /** Hover underline **/
 a {
@@ -151,15 +161,9 @@ footer a:hover:after {
 }
 
 /* media queries */
-@media only screen and (max-device-width: 480px) {
-  html { width: 95%; margin: auto; }
-  header { width: 100%; flex-flow: row wrap; }
-  header h2 { display: block; padding-left: 5px; }
-  /*footer { left: 0; width: 95%; padding: 0; }*/
-  nav { display: block; text-align: left; padding-left: 5px; }
-  nav a { padding-left: 0px; padding-right: 10px; }
-  .content { background-color: rgba(105, 105, 105, 0.4); /* DimGray */ }
-  a:after { display: none; }
+/* breakpoint for browser */
+@media only screen and (max-width: 900px) {
+  .sidebanner { display: none; }
   .thumbnail {
     max-width: 90%;
     float: none;
@@ -169,4 +173,14 @@ footer a:hover:after {
   }
   .project-header > p { display: block; }
   .tasks { display: block; }
+}
+/* phone breakpoints */
+@media only screen and (max-device-width: 480px) {
+  html { width: 95%; margin: auto; }
+  header { width: 100%; flex-flow: row wrap; }
+  header h2 { display: block; padding-left: 5px; }
+  /*footer { left: 0; width: 95%; padding: 0; }*/
+  nav { display: block; text-align: left; padding-left: 5px; }
+  nav a { padding-left: 0px; padding-right: 10px; }
+  a:after { display: none; }
 }
