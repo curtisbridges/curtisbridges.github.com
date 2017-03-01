@@ -2,7 +2,7 @@
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
-body { font: 400 20px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -webkit-font-smoothing: antialiased; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; background-color: whitesmoke;}
+body { font: 400 20px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -webkit-font-smoothing: antialiased; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; background-color: whitesmoke; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure { margin-bottom: 15px; }
@@ -35,15 +35,17 @@ code { padding: 1px 5px; }
 pre { padding: 8px 12px; overflow-x: auto; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
-html { width: auto; }
+html {}
 body {
   display: flex;
+  height: 100%;
 }
 
-header { margin-top: 20px; flex: 0; }
+header { margin-top: 20px; }
 header h1 { margin: 0; white-space: nowrap; padding-right: 25px; display: inline; }
 nav { display: inline-block; text-align: right; white-space: nowrap; padding-right: 10px; position: relative; right: 0 }
 nav a { padding-left: 20px; }
+nav a:first-child { padding-left: 0px; }
 
 
 /** My classes **/
@@ -52,11 +54,10 @@ nav a { padding-left: 20px; }
 }
 
 .content {
-  margin: auto;
+  margin: 0 auto 0 25px;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  min-width: 400px;
+  align-items: stretch;
   max-width: 800px;
   padding-left: 25px;
   padding-right: 25px;
@@ -64,7 +65,6 @@ nav a { padding-left: 20px; }
 .container {
   flex: 1;
   margin: 25px 0 25px 0;
-  padding: 5px;
   height: 100%;
 }
 .project {
@@ -74,12 +74,8 @@ nav a { padding-left: 20px; }
   padding-bottom: 25px;
   border-bottom: 1px dotted silver;
 }
-.project:last-child {
-  border-bottom: none;
-}
-.project-header {
-  margin-bottom: 20px;
-}
+.project:last-child { border-bottom: none; }
+.project-header { margin-bottom: 20px; }
 .project-header > h2 {
   display: inline;
   margin-right: 10px;
@@ -98,7 +94,7 @@ nav a { padding-left: 20px; }
 .tasks > li:before {
   content: "•"; /* Insert content that looks like bullets */
   padding-right: 8px;
-  color: orangered; /* Or a color you prefer */
+  color: orangered;
 }
 
 /* Image related */
@@ -123,7 +119,7 @@ nav a { padding-left: 20px; }
   display: inline-block;
 }
 
-footer { text-align: left; }
+footer { text-align: left;}
 footer ul { margin-left: 0px; }
 footer li { padding-right: 5px; }
 
@@ -176,10 +172,12 @@ footer a:hover:after {
 }
 /* phone breakpoints */
 @media only screen and (max-device-width: 480px) {
-  html { width: 95%; margin: auto; }
+  .content {
+    margin: 0 auto 0 5px;
+    padding: 0 5px;
+  }
   header { width: 100%; flex-flow: row wrap; }
   header h2 { display: block; padding-left: 5px; }
-  /*footer { left: 0; width: 95%; padding: 0; }*/
   nav { display: block; text-align: left; padding-left: 5px; }
   nav a { padding-left: 0px; padding-right: 10px; }
   a:after { display: none; }
