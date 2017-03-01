@@ -63,8 +63,9 @@ footer {
 }
 
 /** My classes **/
-.current {
+#current {
   color: #ff3300;
+  text-decoration: underline;
 }
 
 #homepage {
