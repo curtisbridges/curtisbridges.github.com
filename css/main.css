@@ -43,16 +43,12 @@ body {
   width: 100%;
 }
 
-header {
-  flex: 0;
-}
-
+header { flex: 0; }
 header h1 { margin: 0; white-space: nowrap; padding-right: 25px; display: inline; }
 nav { display: inline-block; text-align: right; white-space: nowrap; padding-right: 10px; position: relative; right: 0 }
 nav a { padding-left: 20px; }
 
-footer {
-}
+footer { }
 
 /** My classes **/
 #current {
