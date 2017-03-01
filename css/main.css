@@ -66,30 +66,47 @@ footer {
 
 .container {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: space-around;
   height: 100%;
-  max-width: 600px;
+  max-width: 800px;
   margin: 25px 0 25px 0;
   border-radius: 5px;
   padding: 5px;
 }
 
 .project {
-  margin-bottom: 50px;
+  clear: both;
+  margin-bottom: 25px;
+}
+.project-header {
+  margin-bottom: 20px;
+}
+.project-header > h2 {
+  display: inline;
+  margin-right: 10px;
+}
+.project-header > p {
+  color: silver;
+  display: inline;
+  font-style: italic;
+}
+.tasks {
+  list-style: none; /* Remove list bullets */
+  padding: 0;
+  margin: 0;
+}
+.tasks > li { padding-left: 15px; }
+.tasks > li:before {
+  content: "•"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: orangered; /* Or a color you prefer */
 }
 
 .thumbnail {
-    max-width: 400px;
-    box-shadow: 2px 2px 10px #888;
-    border-radius: 2px;
-}
-
-.shadowed {
+  max-width: 400px;
+  box-shadow: 2px 2px 10px #888;
   border-radius: 2px;
-  box-shadow: 5px 5px 5px #444;
+  float: left;
+  margin: 0 25px 5px 10px;
 }
 
 .social {
@@ -132,9 +149,9 @@ footer a:hover:after {
 
 /* clearfix */
 .clearfix:after {
-    content:"";
-    display:table;
-    clear:both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* media queries */
@@ -145,13 +162,14 @@ footer a:hover:after {
   /*footer { left: 0; width: 95%; padding: 0; }*/
   nav { display: block; text-align: left; padding-left: 5px; }
   nav a { padding-left: 0px; padding-right: 10px; }
-  .content {
-    background-color: rgba(105, 105, 105, 0.4); /* DimGray */
-  }
+  .content { background-color: rgba(105, 105, 105, 0.4); /* DimGray */ }
   a:after { display: none; }
   .thumbnail {
-      display: block;
-      max-width: 90%;
-      margin: auto;
+    max-width: 90%;
+    float: none;
+    margin: auto;
+    display: block;
   }
+  .project-header > p { display: block; }
+  .tasks { display: block; }
 }
