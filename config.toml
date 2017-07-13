@@ -2,7 +2,6 @@ baseURL = "http://curtisbridges.com/"
 languageCode = "en-us"
 title = "Curtis Bridges"
 theme = ""
-publishDir = "docs"
 
 [params]
     author = "Curtis Bridges"
