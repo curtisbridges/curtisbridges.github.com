@@ -1,132 +1,43 @@
-/** Reset some basic elements */
-body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
+html, body {
+    height: 100%;
+}
 
-/** Basic styling */
-body { font: 400 20px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -webkit-font-smoothing: antialiased; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; background-color: whitesmoke; }
-
-/** Set `margin-bottom` to maintain vertical rhythm */
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure { margin-bottom: 15px; }
-
-/** Images */
-/*img { max-width: 100%; vertical-align: middle; }*/
-
-/** Lists */
-ul, ol { margin-left: 30px; }
-
-li > ul, li > ol { margin-bottom: 0; }
-
-/** Headings */
-h1, h2, h3, h4, h5, h6 { font-weight: 400; }
-
-/** Links */
-a { color: DarkSlateGray; text-decoration: none; }
-a:visited { color: DarkSlateGray; }
-a:hover { color: #ff3300; }
-
-/** Blockquotes */
-blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; letter-spacing: -1px; font-style: italic; }
-blockquote > :last-child { margin-bottom: 0; }
-
-/** Code formatting */
-pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }
-
-code { padding: 1px 5px; }
-
-pre { padding: 8px 12px; overflow-x: auto; }
-pre > code { border: 0; padding-right: 0; padding-left: 0; }
-
-html {}
 body {
-  display: flex;
-  height: 100%;
+    padding-top: 55px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
 }
 
-header { margin-top: 20px; }
-header h1 { margin: 0; white-space: nowrap; padding-right: 25px; display: inline; }
-nav { display: inline-block; text-align: right; white-space: nowrap; padding-right: 10px; position: relative; right: 0 }
-nav a { padding-left: 20px; }
-nav a:first-child { padding-left: 0px; }
-
-
-/** My classes **/
-#current, #homepage {
-  color: #ff3300;
+main {
+    margin: auto;
+    padding: 25px;
+    flex: 1 0 auto;
+    max-width: 750px;
+    min-width: 500px;
 }
 
-.content {
-  margin: 0 auto 0 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  max-width: 800px;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-.container {
-  flex: 1;
-  margin: 25px 0 25px 0;
-  height: 100%;
-}
-.project {
-  clear: both;
-  margin-bottom: 25px;
-  padding-bottom: 25px;
-  border-bottom: 1px dotted silver;
-}
-.project:last-child { border-bottom: none; }
-.project-header { margin-bottom: 20px; }
-.project-header > h2 {
-  margin: 0 10px 0 0;
-}
-.project-header > p {
-  color: silver;
-  display: inline;
-  font-style: italic;
-}
-.project > img {
-  float: left;
-  max-width: 500px;
-  box-shadow: 2px 2px 10px #888;
-  border-radius: 2px;
-  margin: 0 25px 5px 10px;
-}
-.tasks {
-  list-style: none; /* Remove list bullets */
-  padding: 0;
-  margin: 0;
-}
-.tasks > li { padding-left: 15px; }
-.tasks > li:before {
-  content: "•"; /* Insert content that looks like bullets */
-  padding-right: 8px;
-  color: orangered;
+/*footer*/
+
+.copyright {
+    margin: 15px 0;
 }
 
-/* Image related */
-.sidebanner {
-  float: right;
-  overflow-y: visible;
-}
-.thumbnail {
-  max-width: 400px;
-  box-shadow: 2px 2px 10px #888;
-  border-radius: 2px;
-  float: left;
-  margin: 0 25px 5px 10px;
+/*home page*/
+
+.intro {
+    margin: 25vh 0;
 }
 
-.social {
-  display: block;
-  white-space: nowrap;
-}
-.social li {
-  list-style: none;
-  display: inline-block;
+.intro > h1 {
+    color: #212121;
+    font-size: 12vh;
 }
 
-footer { text-align: left;}
-footer ul { margin-left: 0px; }
-footer li { padding-right: 5px; }
+.intro > h2 {
+    color: #757575;
+    font-size: 3vmin;
+}
 
 /** Hover underline **/
 a {
@@ -150,42 +61,101 @@ a:hover:after {
   background: #ff3300;
 }
 
-footer a:hover:after {
-  background: transparent;
+/*apply accent colour to links*/
+a:link, a:visited {
+    color: var(--accent);
 }
 
-/* clearfix */
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+.navbar-icon a:hover:after {
+  width: 0px;
 }
 
-/* media queries */
-/* breakpoint for browser */
-@media only screen and (max-width: 1200px) {
-  .sidebanner { display: none; }
-  .project > img {
-    float: none;
-    margin-bottom: 15px;
-    display: block;
-  }
-  .project-header > p { display: block; }
-  .tasks { display: block; }
+a:hover {
+    color: var(--accent) !important;
+    text-decoration: none;
 }
-/* phone breakpoints */
-@media only screen and (max-device-width: 480px) {
-  .content {
-    margin: 0 auto 0 5px;
-    padding: 0 5px;
-  }
-  header { width: 100%; flex-flow: row wrap; }
-  header h2 { display: block; padding-left: 5px; }
-  nav { display: block; text-align: left; padding-left: 5px; }
-  nav a { padding-left: 0px; padding-right: 10px; }
-  a:after { display: none; }
-  .project > img {
-    max-width: 300px;
-    margin: 0 auto 15px auto;;
-  }
+
+/*paginator at bottom of list view*/
+.pages {
+    padding: 15px 0;
+}
+
+.pages-icon {
+    padding: 0 15px;
+}
+
+/*list item for posts and projects*/
+.item {
+    padding: 10px 0;
+}
+
+.item-meta {
+  display: flex;
+  justify-content: space-between;
+  text-align: initial;
+}
+
+.item-tag {
+    /*background-color: var(--accent);*/
+    color: silver;
+    border-bottom: 1px solid silver;
+    margin: 0 2px;
+}
+/*.item-tag::after {
+  content: ', ';
+}
+.item-tag:last-child::after {
+  content: '';
+}*/
+
+.item-date {
+    margin: auto 0;
+}
+
+.work-item {
+    padding-bottom: 25px;
+    border-bottom: 1px dotted silver;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*.work-item:last-child {
+    border-bottom: none;
+}*/
+
+.work-item > img {
+  max-width: 500px;
+  box-shadow: 2px 2px 10px #888;
+  border-radius: 2px;
+  margin: 25px 0px;
+}
+.work-tasks {
+  list-style: none; /* Remove list bullets */
+  padding: 0;
+  margin: auto;
+}
+.work-tasks > li {
+  padding-left: 25px;
+  text-align: left;
+}
+.work-tasks > li:before {
+  content: "•"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: orangered;
+}
+
+/*navigation bar icons*/
+.navbar-icon {
+    font-size: 125%;
+    display: inline-block !important;
+}
+
+/*coloured borders at top and bottom of the page*/
+.navbar.navbar-default {
+    border-top: var(--border-width) solid var(--accent);
+}
+
+footer {
+    border-bottom: var(--border-width) solid var(--accent);
 }

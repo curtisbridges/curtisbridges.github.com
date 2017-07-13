@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Curtis Bridges</title>
+    <link>http://curtisbridges.com/</link>
+    <description>Recent content on Curtis Bridges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Jul 2017 11:15:14 -0400</lastBuildDate>
+    
+	<atom:link href="http://curtisbridges.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Riverbed SteelCentral SaaS</title>
+      <link>http://curtisbridges.com/product/riverbed-steelcentral/</link>
+      <pubDate>Thu, 13 Jul 2017 11:15:14 -0400</pubDate>
+      
+      <guid>http://curtisbridges.com/product/riverbed-steelcentral/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Riverbed AppInternals</title>
+      <link>http://curtisbridges.com/product/riverbed-appinternals/</link>
+      <pubDate>Thu, 13 Jul 2017 10:31:33 -0400</pubDate>
+      
+      <guid>http://curtisbridges.com/product/riverbed-appinternals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>http://curtisbridges.com/post/hello-world/</link>
+      <pubDate>Wed, 12 Jul 2017 18:51:37 -0400</pubDate>
+      
+      <guid>http://curtisbridges.com/post/hello-world/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis sapien vestibulum metus placerat tincidunt. Vivamus quam leo, efficitur et nisi nec, hendrerit aliquet massa. Phasellus quis dictum libero. Integer feugiat imperdiet erat eu congue. Phasellus mollis augue nunc, in fringilla felis condimentum ac. Praesent pharetra dignissim nisi ut ornare. Duis urna augue, mattis sed porta sed, tincidunt varius urna.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In commodo, turpis vitae consequat pulvinar, sem leo ultrices lacus, at bibendum lorem mi et metus.</description>
+    </item>
+    
+    <item>
+      <title>Cinch It Asset Reporter</title>
+      <link>http://curtisbridges.com/project/cinch-it/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://curtisbridges.com/project/cinch-it/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
