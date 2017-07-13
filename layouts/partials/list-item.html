@@ -1,0 +1,42 @@
+<div class="item">
+
+    {{ if eq .Type "post" }}
+
+        <div class="item-meta">
+          <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+          <span class="item-date text-muted">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") }}</span>
+        </div>
+        <div class="item-meta">
+          <div class="item-description">{{ .Description }}</div>
+          <div>{{ range .Params.tags }} <span class="item-tag text-muted">{{ . }}</span> {{ end }}</div>
+        </div>
+
+    {{ else if eq .Type "project" }}
+
+      <div class="item-meta">
+          <div>
+            <h4><a href="https://github.com/{{ .Site.Params.githubUsername }}/{{ .Params.repo }}/">{{ .Title }}</a></h4>
+            <div class="item-description">{{ .Description }}</div>
+          </div>
+        <div>{{ range .Params.tags }} <span class="item-tag text-muted">{{ . }}</span> {{ end }}</div>
+      </div>
+
+    {{ else if eq .Type "product" }}
+
+      <div class="work-item">
+        <h2><a href="{{ .Params.Canonical }}">{{ .Title }}</a></h2>
+        <p class="text-muted">{{ .Description }}</p>
+        <div>{{ range .Params.tags }} <span class="item-tag text-muted">{{ . }}</span> {{ end }}</div>
+        <img src="{{ .Params.Screenshot }}" alt="{{.Description}}">
+        <ul class="work-tasks">
+          {{ range .Params.tasks }} <li>{{ . }}</li> {{ end }}
+        </ul>
+      </div>
+
+    {{ else }}
+
+        Unknown type.
+
+    {{ end }}
+
+</div>

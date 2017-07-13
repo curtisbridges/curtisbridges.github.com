@@ -1,0 +1,161 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    padding-top: 55px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+main {
+    margin: auto;
+    padding: 25px;
+    flex: 1 0 auto;
+    max-width: 750px;
+    min-width: 500px;
+}
+
+/*footer*/
+
+.copyright {
+    margin: 15px 0;
+}
+
+/*home page*/
+
+.intro {
+    margin: 25vh 0;
+}
+
+.intro > h1 {
+    color: #212121;
+    font-size: 12vh;
+}
+
+.intro > h2 {
+    color: #757575;
+    font-size: 3vmin;
+}
+
+/** Hover underline **/
+a {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 1px;
+}
+
+a:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+a:hover:after {
+  width: 100%;
+  background: #ff3300;
+}
+
+/*apply accent colour to links*/
+a:link, a:visited {
+    color: var(--accent);
+}
+
+.navbar-icon a:hover:after {
+  width: 0px;
+}
+
+a:hover {
+    color: var(--accent) !important;
+    text-decoration: none;
+}
+
+/*paginator at bottom of list view*/
+.pages {
+    padding: 15px 0;
+}
+
+.pages-icon {
+    padding: 0 15px;
+}
+
+/*list item for posts and projects*/
+.item {
+    padding: 10px 0;
+}
+
+.item-meta {
+  display: flex;
+  justify-content: space-between;
+  text-align: initial;
+}
+
+.item-tag {
+    /*background-color: var(--accent);*/
+    color: silver;
+    border-bottom: 1px solid silver;
+    margin: 0 2px;
+}
+/*.item-tag::after {
+  content: ', ';
+}
+.item-tag:last-child::after {
+  content: '';
+}*/
+
+.item-date {
+    margin: auto 0;
+}
+
+.work-item {
+    padding-bottom: 25px;
+    border-bottom: 1px dotted silver;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*.work-item:last-child {
+    border-bottom: none;
+}*/
+
+.work-item > img {
+  max-width: 500px;
+  box-shadow: 2px 2px 10px #888;
+  border-radius: 2px;
+  margin: 25px 0px;
+}
+.work-tasks {
+  list-style: none; /* Remove list bullets */
+  padding: 0;
+  margin: auto;
+}
+.work-tasks > li {
+  padding-left: 25px;
+  text-align: left;
+}
+.work-tasks > li:before {
+  content: "•"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: orangered;
+}
+
+/*navigation bar icons*/
+.navbar-icon {
+    font-size: 125%;
+    display: inline-block !important;
+}
+
+/*coloured borders at top and bottom of the page*/
+.navbar.navbar-default {
+    border-top: var(--border-width) solid var(--accent);
+}
+
+footer {
+    border-bottom: var(--border-width) solid var(--accent);
+}
