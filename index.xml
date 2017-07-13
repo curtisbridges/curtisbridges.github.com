@@ -12,11 +12,31 @@
     
     
     <item>
+      <title>Dotfiles</title>
+      <link>http://curtisbridges.com/project/dotfiles/</link>
+      <pubDate>Thu, 13 Jul 2017 11:15:14 -0400</pubDate>
+      
+      <guid>http://curtisbridges.com/project/dotfiles/</guid>
+      <description>My personal dotfiles for various programs.
+I don&amp;rsquo;t expect this to be very reusable for most people; it is simply a way for me to organize my own dotfiles.
+Use at your own risk.</description>
+    </item>
+    
+    <item>
       <title>Riverbed SteelCentral SaaS</title>
       <link>http://curtisbridges.com/product/riverbed-steelcentral/</link>
       <pubDate>Thu, 13 Jul 2017 11:15:14 -0400</pubDate>
       
       <guid>http://curtisbridges.com/product/riverbed-steelcentral/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cinch It Asset Reporter</title>
+      <link>http://curtisbridges.com/project/cinch-it/</link>
+      <pubDate>Thu, 13 Jul 2017 10:31:33 -0400</pubDate>
+      
+      <guid>http://curtisbridges.com/project/cinch-it/</guid>
       <description></description>
     </item>
     
@@ -30,22 +50,14 @@
     </item>
     
     <item>
-      <title>Hello World</title>
-      <link>http://curtisbridges.com/post/hello-world/</link>
-      <pubDate>Wed, 12 Jul 2017 18:51:37 -0400</pubDate>
+      <title>First Post</title>
+      <link>http://curtisbridges.com/post/first-post/</link>
+      <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://curtisbridges.com/post/hello-world/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis sapien vestibulum metus placerat tincidunt. Vivamus quam leo, efficitur et nisi nec, hendrerit aliquet massa. Phasellus quis dictum libero. Integer feugiat imperdiet erat eu congue. Phasellus mollis augue nunc, in fringilla felis condimentum ac. Praesent pharetra dignissim nisi ut ornare. Duis urna augue, mattis sed porta sed, tincidunt varius urna.
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In commodo, turpis vitae consequat pulvinar, sem leo ultrices lacus, at bibendum lorem mi et metus.</description>
-    </item>
-    
-    <item>
-      <title>Cinch It Asset Reporter</title>
-      <link>http://curtisbridges.com/project/cinch-it/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://curtisbridges.com/project/cinch-it/</guid>
-      <description></description>
+      <guid>http://curtisbridges.com/post/first-post/</guid>
+      <description>&lt;p&gt;This is the first post of my new site. I&amp;rsquo;m looking to post thoughts, opinions, and links from around the web, book reviews, my current projects from GitHub and my online portfolio.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

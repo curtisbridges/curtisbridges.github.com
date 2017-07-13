@@ -3,8 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://curtisbridges.com/project/dotfiles/</loc>
+    <lastmod>2017-07-13T11:15:14-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://curtisbridges.com/product/riverbed-steelcentral/</loc>
     <lastmod>2017-07-13T11:15:14-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://curtisbridges.com/project/cinch-it/</loc>
+    <lastmod>2017-07-13T10:31:33-04:00</lastmod>
   </url>
   
   <url>
@@ -13,8 +23,8 @@
   </url>
   
   <url>
-    <loc>http://curtisbridges.com/post/hello-world/</loc>
-    <lastmod>2017-07-12T18:51:37-04:00</lastmod>
+    <loc>http://curtisbridges.com/post/first-post/</loc>
+    <lastmod>2017-07-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -42,12 +52,14 @@
   </url>
   
   <url>
-    <loc>http://curtisbridges.com/categories/</loc>
+    <loc>http://curtisbridges.com/tags/bash/</loc>
+    <lastmod>2017-07-13T11:15:14-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://curtisbridges.com/project/cinch-it/</loc>
+    <loc>http://curtisbridges.com/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -75,14 +87,14 @@
   </url>
   
   <url>
-    <loc>http://curtisbridges.com/tags/gwt/</loc>
-    <lastmod>2017-07-13T10:31:33-04:00</lastmod>
+    <loc>http://curtisbridges.com/tags/git/</loc>
+    <lastmod>2017-07-13T11:15:14-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://curtisbridges.com/tags/hello/</loc>
-    <lastmod>2017-07-12T18:51:37-04:00</lastmod>
+    <loc>http://curtisbridges.com/tags/gwt/</loc>
+    <lastmod>2017-07-13T10:31:33-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -106,7 +118,7 @@
   
   <url>
     <loc>http://curtisbridges.com/post/</loc>
-    <lastmod>2017-07-12T18:51:37-04:00</lastmod>
+    <lastmod>2017-07-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -118,6 +130,7 @@
   
   <url>
     <loc>http://curtisbridges.com/project/</loc>
+    <lastmod>2017-07-13T11:15:14-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -140,13 +153,20 @@
   </url>
   
   <url>
-    <loc>http://curtisbridges.com/tags/web/</loc>
+    <loc>http://curtisbridges.com/tags/vim/</loc>
+    <lastmod>2017-07-13T11:15:14-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://curtisbridges.com/tags/world/</loc>
-    <lastmod>2017-07-12T18:51:37-04:00</lastmod>
+    <loc>http://curtisbridges.com/tags/web/</loc>
+    <lastmod>2017-07-13T10:31:33-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://curtisbridges.com/tags/zsh/</loc>
+    <lastmod>2017-07-13T11:15:14-04:00</lastmod>
     <priority>0</priority>
   </url>
   
