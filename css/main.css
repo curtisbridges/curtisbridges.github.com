@@ -158,3 +158,19 @@ footer a {
 footer {
     border-bottom: var(--border-width) solid var(--accent);
 }
+
+
+
+
+/* ========== Media Queries ========*/
+/* ----------- iPhone 6 ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      /* disable fancy underline animation on mobile, because it makes the user double-click links. */
+      a:hover:after {
+          width: 0;
+      }
+}
