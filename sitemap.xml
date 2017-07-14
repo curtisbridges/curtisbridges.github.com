@@ -28,6 +28,46 @@
   </url>
   
   <url>
+    <loc>http://curtisbridges.com/post/bignerdranch-day7/</loc>
+    <lastmod>2014-10-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://curtisbridges.com/post/bignerdranch-day6/</loc>
+    <lastmod>2014-10-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://curtisbridges.com/post/bignerdranch-day5/</loc>
+    <lastmod>2014-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://curtisbridges.com/post/bignerdranch-day4/</loc>
+    <lastmod>2014-10-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://curtisbridges.com/post/bignerdranch-day3/</loc>
+    <lastmod>2014-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://curtisbridges.com/post/bignerdranch-day2/</loc>
+    <lastmod>2014-10-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://curtisbridges.com/post/bignerdranch-day1/</loc>
+    <lastmod>2014-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://curtisbridges.com/post/bignerdranch-day0/</loc>
+    <lastmod>2014-10-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://curtisbridges.com/tags/amazon/</loc>
     <lastmod>2017-07-13T11:15:14-04:00</lastmod>
     <priority>0</priority>
@@ -105,6 +145,12 @@
   </url>
   
   <url>
+    <loc>http://curtisbridges.com/tags/ios/</loc>
+    <lastmod>2014-10-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://curtisbridges.com/tags/java/</loc>
     <lastmod>2017-07-13T10:31:33-04:00</lastmod>
     <priority>0</priority>
@@ -131,6 +177,12 @@
   <url>
     <loc>http://curtisbridges.com/project/</loc>
     <lastmod>2017-07-13T11:15:14-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://curtisbridges.com/tags/swift/</loc>
+    <lastmod>2014-10-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Big Nerd Ranch, Beginning iOS - Day 4</title>
+        <style>
+
+    html body {
+        font-family: Open Sans, sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: orangered;
+        --border-width:  1px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans">
+
+
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+ 
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/typescript.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <meta name="generator" content="Hugo 0.25.1" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">Big Nerd Ranch, Beginning iOS - Day 4</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/">Blog</a></li>
+                            
+                                <li><a href="/project/">Projects</a></li>
+                            
+                                <li><a href="/product/">Portfolio</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:curtis@curtisbridges.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/curtisbridges/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/curtisbridges/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/curtisbridges/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <h2><a href="/post/bignerdranch-day4/">Big Nerd Ranch, Beginning iOS - Day 4</a></h2>
+    <span class="item-date text-muted">October 16, 2014</span>
+
+    <div class="item-description"></div>
+    <div> <span class="item-tag text-muted">iOS</span>  <span class="item-tag text-muted">swift</span> </div>
+
+    <br> <div class="text-justify"><p>Coming off yesterday’s high, I was very much looking forward to today.</p>
+
+<p></p>
+
+<p>Today started an entirely new project, a home inventory app. This app is designed with a table view, a control used constantly in iOS apps and within iOS itself. Given its widespread use, this is an important day of hands-on training.</p>
+
+<p>I found the control to be interesting but not entirely what I was expecting; I’ve used a lot of table controls in prior UI implementation, but it is a little different on iOS. Most tables have a variable amount of columns as well as rows on other platforms – on iOS it appears that tables have a single column and rows themselves are designed around a single control of your design. This design can include “column-like” structures but aren’t required to look like columns. This makes UITableView something entirely different to me. It certainly allows for some rich display of items but isn’t exactly like a traditional spreadsheet design.</p>
+
+<p>Another interesting aspect of UITableView are the other parts of the control – headers, footers, and even a notion of sections. Christian (the instructor) pointed out how iOS’s Settings app uses sections. This certainly makes for some different takes on the design of an application.</p>
+
+<p>We then learned some CRUD (Create, Read, Update, Delete) operations on tables. iOS does some interesting things when it comes to efficiency of UI display by reusing cells when it can. The rest was pretty typical stuff.</p>
+
+<p>Next, we added a navigation control to our design. This control is fundamental to mobile app design, as it allows a hierarchy of views to be navigated and have a standard “back” button to return from “drill down” views. The drill-down view for our table view of inventory items was a detailed view of an item. This showed name, serial number, value and date created. To this view, we eventually added a toolbar that linked to the camera app using the system’s camera button and eventually made it also allow editing of the photo selected. This detailed item view then displayed the selected photo.</p>
+
+<p>Lastly, we tied the app into system events so our inventory could be persisted to disk. At this point, you have a reasonable app’s functionality. Tomorrow will involve Auto Layout to clean up some of the visual aspects of the app to add a significant amount of polish.</p>
+
+<p>This has been a great experience so far and I truly feel like we’ve gained a a broad spectrum of the core of iOS development already.</p></div>
+
+    
+    
+
+    
+        <h4 class="page-header">Related</h4>
+         <div class="item">
+
+    
+
+      <div class="item-meta">
+  <div class="item-meta">
+    <h4><a href= "/post/bignerdranch-day7/" >Big Nerd Ranch, Beginning iOS - Day 7</a></h4>
+    <div class="item-read-time">3 min</div>
+  </div>
+
+  <span class="item-date text-muted">October 19, 2014</span>
+</div>
+<div class="item-meta">
+  <div class="item-description"></div>
+  <div><span class="item-tag text-muted">iOS</span><span class="item-tag text-muted">swift</span></div>
+</div>
+
+
+    
+
+</div>
+  <div class="item">
+
+    
+
+      <div class="item-meta">
+  <div class="item-meta">
+    <h4><a href= "/post/bignerdranch-day6/" >Big Nerd Ranch, Beginning iOS - Day 6</a></h4>
+    <div class="item-read-time">2 min</div>
+  </div>
+
+  <span class="item-date text-muted">October 18, 2014</span>
+</div>
+<div class="item-meta">
+  <div class="item-description"></div>
+  <div><span class="item-tag text-muted">iOS</span><span class="item-tag text-muted">swift</span></div>
+</div>
+
+
+    
+
+</div>
+  <div class="item">
+
+    
+
+      <div class="item-meta">
+  <div class="item-meta">
+    <h4><a href= "/post/bignerdranch-day5/" >Big Nerd Ranch, Beginning iOS - Day 5</a></h4>
+    <div class="item-read-time">3 min</div>
+  </div>
+
+  <span class="item-date text-muted">October 17, 2014</span>
+</div>
+<div class="item-meta">
+  <div class="item-description"></div>
+  <div><span class="item-tag text-muted">iOS</span><span class="item-tag text-muted">swift</span></div>
+</div>
+
+
+    
+
+</div>
+ 
+    
+
+</main>
+
+        <footer>
+            <p class="copyright text-muted">&copy; All rights reserved.
+              
+        </footer>
+    </body>
+</html>
+
