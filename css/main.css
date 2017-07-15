@@ -76,7 +76,6 @@ a:hover {
     width: 0px;
 }
 
-
 /*paginator at bottom of list view*/
 .pages {
     padding: 15px 0;
@@ -112,6 +111,7 @@ a:hover {
     vertical-align: middle;
 }
 
+/* work related rules */
 .work-item {
     padding-bottom: 25px;
     border-bottom: 1px dotted silver;
@@ -159,8 +159,6 @@ footer a {
 footer {
     border-bottom: var(--border-width) solid var(--accent);
 }
-
-
 
 
 /* ========== Media Queries ========*/
