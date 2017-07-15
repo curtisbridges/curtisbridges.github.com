@@ -166,11 +166,18 @@ footer {
 /* ----------- iPhone 6 ----------- */
 /* Portrait and Landscape */
 @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-      /* disable fancy underline animation on mobile, because it makes the user double-click links. */
-      a:hover:after {
-          width: 0;
-      }
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+    /* disable fancy underline animation on mobile, because it makes the user double-click links. */
+    a:hover:after {
+        width: 0;
+    }
+    /* adjust other elements for fit in smaller screen */
+    main {
+        padding: 15px;
+    }
+    .work-item > img {
+        max-width: 300px;
+    }
 }
