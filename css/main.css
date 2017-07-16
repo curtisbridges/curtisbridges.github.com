@@ -135,11 +135,11 @@ a:hover {
     padding: 0;
     margin: auto;
 }
-.work-tasks, .history > li {
+.work-tasks > li, .history > li {
     padding-left: 25px;
     text-align: left;
 }
-.work-tasks, .history > li:before {
+.work-tasks > li:before, .history > li:before {
     content: "•"; /* Insert content that looks like bullets */
     padding-right: 8px;
     color: orangered;
