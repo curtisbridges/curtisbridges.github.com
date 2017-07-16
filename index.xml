@@ -6,10 +6,19 @@
     <description>Recent content on Curtis Bridges</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Jul 2017 11:15:14 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 16 Jul 2017 07:38:45 -0400</lastBuildDate>
     
 	<atom:link href="http://curtisbridges.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Scripts</title>
+      <link>http://curtisbridges.com/project/scripts/</link>
+      <pubDate>Sun, 16 Jul 2017 07:38:45 -0400</pubDate>
+      
+      <guid>http://curtisbridges.com/project/scripts/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Dotfiles</title>
@@ -156,10 +165,9 @@ Use at your own risk.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://curtisbridges.com/about/</guid>
-      <description>Who am I? I&amp;rsquo;m a husband, father of two, and a developer. I&amp;rsquo;m a Mainer, now living in New Hampshire.
+      <description>Who am I? I&amp;rsquo;m a husband, father of two, and a developer. I was born and raised in Maine, now living in New Hampshire.
 Hobbies I love to read, listen to podcasts &amp;amp; audiobooks. I spend entirely too much time online researching topics of interest. I&amp;rsquo;m a sports enthusiast.
-I do my best to stay in shape &amp;ndash; running, cycling, and weight lifting.
-Education I graduated from Brewer High School, in Maine. I attended Worcester Polytechnic Institute for two years in Massachusetts but later transferred home to attend the University of Maine in Orono.</description>
+I do my best to stay in shape &amp;ndash; running, cycling, and weight lifting. It&amp;rsquo;s been a while since I&amp;rsquo;ve hiked or gone camping, but I still love those activities.</description>
     </item>
     
   </channel>

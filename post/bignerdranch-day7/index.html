@@ -112,7 +112,8 @@
     <div class="item-description"></div>
     <div> <span class="item-tag text-muted">iOS</span>  <span class="item-tag text-muted">swift</span> </div>
 
-    <br> <div class="text-justify"><p>Day 7 was very different from the previous days at the Ranch. It is mostly a catch-all day for miscellaneous topics that came up throughout the week as well as a discussion on tools.</p>
+    <br>
+    <div class="text-justify"><p>Day 7 was very different from the previous days at the Ranch. It is mostly a catch-all day for miscellaneous topics that came up throughout the week as well as a discussion on tools.</p>
 
 <p></p>
 
@@ -127,19 +128,20 @@
 <p>I was impressed with how easy iOS makes animating interface elements. In a lot of cases, it can simply be achieved via a call to:</p>
 
 <pre><code class="language-swift">UIView.animateWithDuration(\_: animations: () -&gt; ())
-with a start state before the call and the desired end state within the closure. There we variations on this as well such as Spring animations:
+// with a start state before the call and the desired end state within the closure.
+// There we variations on this as well such as Spring animations:
 
 UIView.animateWithDuration(0.6, delay: 0.0, usingSpringWithDampening: 0.2, initialSpringVelocity: 0.0,
     options: UIViewAnimationOptions.something, animations: { () -&gt; Void in
         // .. finishing code
         }, completion: nil)
-And keyframe animations:
 
+// And keyframe animations:
 override func touchesEnded(touches: NSSet, withEvent event: UIEVent) {
     let touch = touches.anyObject() as UITouch
     let loc = touch.locationInView(view)
 
-    // Update contraints outside of animation closure
+    // Update constraints outside of animation closure
     topConstraint.constant = loc.y
 
     UIView.animateWithDuration(0.5, animations: { () -&gt; Void in
@@ -212,7 +214,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     
 
-      <div class="item-meta">
+        <div class="item-meta">
   <div class="item-meta">
     <h4><a href= "/post/bignerdranch-day6/" >Big Nerd Ranch, Beginning iOS - Day 6</a></h4>
     <div class="item-read-time">2 min</div>
@@ -233,7 +235,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     
 
-      <div class="item-meta">
+        <div class="item-meta">
   <div class="item-meta">
     <h4><a href= "/post/bignerdranch-day5/" >Big Nerd Ranch, Beginning iOS - Day 5</a></h4>
     <div class="item-read-time">3 min</div>
@@ -254,7 +256,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     
 
-      <div class="item-meta">
+        <div class="item-meta">
   <div class="item-meta">
     <h4><a href= "/post/bignerdranch-day4/" >Big Nerd Ranch, Beginning iOS - Day 4</a></h4>
     <div class="item-read-time">2 min</div>
@@ -276,9 +278,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
 </main>
 
-        <footer>
-            <p class="copyright text-muted">&copy; All rights reserved.
-              
+        <footer class="text-muted">
+            
+            <p class="copyright">&copy; All rights reserved.
         </footer>
     </body>
 </html>
