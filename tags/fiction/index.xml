@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fiction on Curtis Bridges</title>
+    <link>http://curtisbridges.com/tags/fiction/</link>
+    <description>Recent content in Fiction on Curtis Bridges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://curtisbridges.com/tags/fiction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Heart Of Darkness</title>
+      <link>http://curtisbridges.com/book/heart-of-darkness--joseph-conrad/</link>
+      <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://curtisbridges.com/book/heart-of-darkness--joseph-conrad/</guid>
+      <description>I can&amp;rsquo;t explain exactly why this is one of my favorite of all time books; I&amp;rsquo;ll simply chalk it up to &amp;lsquo;mood&amp;rsquo;. A simple, dark atmosphere perfectly rendered with words.</description>
+    </item>
+    
+  </channel>
+</rss>

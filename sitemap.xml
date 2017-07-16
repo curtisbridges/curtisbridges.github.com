@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>http://curtisbridges.com/book/heart-of-darkness--joseph-conrad/</loc>
+    <lastmod>2017-07-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://curtisbridges.com/project/dotfiles/</loc>
     <lastmod>2017-07-13T11:15:14-04:00</lastmod>
   </url>
@@ -107,6 +112,12 @@
   </url>
   
   <url>
+    <loc>http://curtisbridges.com/book/</loc>
+    <lastmod>2017-07-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://curtisbridges.com/categories/</loc>
     <priority>0</priority>
   </url>
@@ -132,6 +143,12 @@
   <url>
     <loc>http://curtisbridges.com/tags/docker/</loc>
     <lastmod>2017-07-13T11:15:14-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://curtisbridges.com/tags/fiction/</loc>
+    <lastmod>2017-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

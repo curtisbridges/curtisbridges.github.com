@@ -76,9 +76,6 @@ a:hover {
     color: var(--accent) !important;
     text-decoration: none;
 }
-.navbar-icon a:hover:after {
-    width: 0px;
-}
 
 /*paginator at bottom of list view*/
 .pages {
@@ -100,9 +97,15 @@ a:hover {
 }
 .item-tag {
     color: silver;
+    background-color: var(--backgroundColor);
     border-bottom: 1px solid silver;
     margin: 0 2px;
+    font-size: 85%;
 }
+.item-tag:not(:last-child):after {
+    content: ', '
+}
+
 .item-date {
     margin: auto 0;
 }
@@ -113,6 +116,9 @@ a:hover {
 .item-link-perm-link {
     font-size: small;
     vertical-align: middle;
+}
+.color-accent {
+    color: var(--accent);
 }
 
 /* work related rules */
@@ -149,7 +155,28 @@ a:hover {
     text-align: initial;
 }
 
+.book-thumbnail {
+    max-width: 200px;
+}
+.book-container {
+    display: flex;
+    align-items: flex-start;
+}
+.book-writeup {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+}
+.book-writeup > h2 {
+    margin: 0;
+}
+
 /*navigation bar icons*/
+.navbar-icon a:hover:after {
+    width: 0px;
+}
 .navbar-icon {
     font-size: 125%;
     display: inline-block !important;
@@ -166,6 +193,9 @@ footer a {
 
 footer {
     border-bottom: var(--border-width) solid var(--accent);
+}
+article footer {
+    border-bottom: 1px dotted silver;
 }
 
 
