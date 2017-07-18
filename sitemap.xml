@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://curtisbridges.com/2017/07/raven-intelligence/</loc>
+    <lastmod>2017-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://curtisbridges.com/project/scripts/</loc>
     <lastmod>2017-07-16T07:38:45-04:00</lastmod>
   </url>
@@ -33,47 +38,47 @@
   </url>
   
   <url>
-    <loc>http://curtisbridges.com/post/first-post/</loc>
+    <loc>http://curtisbridges.com/2017/07/first-post/</loc>
     <lastmod>2017-07-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://curtisbridges.com/post/bignerdranch-day7/</loc>
+    <loc>http://curtisbridges.com/2014/10/big-nerd-ranch-beginning-ios---day-7/</loc>
     <lastmod>2014-10-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://curtisbridges.com/post/bignerdranch-day6/</loc>
+    <loc>http://curtisbridges.com/2014/10/big-nerd-ranch-beginning-ios---day-6/</loc>
     <lastmod>2014-10-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://curtisbridges.com/post/bignerdranch-day5/</loc>
+    <loc>http://curtisbridges.com/2014/10/big-nerd-ranch-beginning-ios---day-5/</loc>
     <lastmod>2014-10-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://curtisbridges.com/post/bignerdranch-day4/</loc>
+    <loc>http://curtisbridges.com/2014/10/big-nerd-ranch-beginning-ios---day-4/</loc>
     <lastmod>2014-10-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://curtisbridges.com/post/bignerdranch-day3/</loc>
+    <loc>http://curtisbridges.com/2014/10/big-nerd-ranch-beginning-ios---day-3/</loc>
     <lastmod>2014-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://curtisbridges.com/post/bignerdranch-day2/</loc>
+    <loc>http://curtisbridges.com/2014/10/big-nerd-ranch-beginning-ios---day-2/</loc>
     <lastmod>2014-10-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://curtisbridges.com/post/bignerdranch-day1/</loc>
+    <loc>http://curtisbridges.com/2014/10/big-nerd-ranch-beginning-ios---day-1/</loc>
     <lastmod>2014-10-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://curtisbridges.com/post/bignerdranch-day0/</loc>
+    <loc>http://curtisbridges.com/2014/10/big-nerd-ranch-beginning-ios---day-0/</loc>
     <lastmod>2014-10-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -136,7 +141,7 @@
   
   <url>
     <loc>http://curtisbridges.com/</loc>
-    <lastmod>2017-07-16T07:38:45-04:00</lastmod>
+    <lastmod>2017-07-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -190,7 +195,7 @@
   
   <url>
     <loc>http://curtisbridges.com/post/</loc>
-    <lastmod>2017-07-13T00:00:00+00:00</lastmod>
+    <lastmod>2017-07-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -203,6 +208,12 @@
   <url>
     <loc>http://curtisbridges.com/project/</loc>
     <lastmod>2017-07-16T07:38:45-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://curtisbridges.com/tags/science/</loc>
+    <lastmod>2017-07-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
