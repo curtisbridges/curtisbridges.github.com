@@ -15,12 +15,23 @@ main {
     padding: 25px;
     max-width: 750px;
     min-width: 350px;
+    height: 100%;
 }
 header {
     margin-bottom: 10px;
 }
 pre {
     font-size: 12px;
+}
+footer a {
+    margin-bottom: 10px;
+}
+
+footer {
+    border-bottom: var(--border-width) solid var(--accent);
+}
+article footer {
+    border-bottom: 1px dotted silver;
 }
 
 /*footer*/
@@ -198,17 +209,6 @@ a:hover {
 /*coloured borders at top and bottom of the page*/
 .navbar.navbar-default {
     border-top: var(--border-width) solid var(--accent);
-}
-
-footer a {
-    margin-bottom: 10px;
-}
-
-footer {
-    border-bottom: var(--border-width) solid var(--accent);
-}
-article footer {
-    border-bottom: 1px dotted silver;
 }
 
 
