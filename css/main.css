@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/** element rules **/
 html, body {
     height: 100%;
     font-size: 16px;
@@ -15,7 +16,6 @@ main {
     padding: 25px;
     max-width: 750px;
     min-width: 350px;
-    height: 100%;
 }
 header {
     margin-bottom: 10px;
@@ -26,7 +26,6 @@ pre {
 footer a {
     margin-bottom: 10px;
 }
-
 footer {
     border-bottom: var(--border-width) solid var(--accent);
 }
@@ -34,12 +33,20 @@ article footer {
     border-bottom: 1px dotted silver;
 }
 
-/*footer*/
+/** generic classes */
+.color-accent {
+    color: var(--accent);
+}
+.anchor-top {
+    margin-top: 0;
+}
+
+/* footer */
 .copyright {
     margin: 15px 0;
 }
 
-/*home page*/
+/* home page */
 .intro {
     display: flex;
     flex-direction: column;
@@ -80,7 +87,7 @@ a:hover::after {
     background: #ff3300;
     transform: scaleX(1);
 }
-/*apply accent colour to links*/
+/* apply accent colour to links */
 a:link, a:visited {
     color: var(--accent);
 }
@@ -92,7 +99,7 @@ a:hover {
     width: 0;
 }
 
-/*paginator at bottom of list view*/
+/* paginator at bottom of list view */
 .pages {
     padding: 15px 0;
 }
@@ -100,7 +107,7 @@ a:hover {
     padding: 0 15px;
 }
 
-/*list item for posts and projects*/
+/* list item for posts and projects */
 .item {
     padding: 10px 0;
 }
@@ -140,9 +147,6 @@ a:hover {
 .item-link-perm-link {
     font-size: small;
     vertical-align: middle;
-}
-.color-accent {
-    color: var(--accent);
 }
 
 /* work related rules */
@@ -197,7 +201,7 @@ a:hover {
     margin: 0;
 }
 
-/*navigation bar icons*/
+/* navigation bar icons */
 .navbar-icon a:hover:after {
     width: 0px;
 }
@@ -206,7 +210,7 @@ a:hover {
     display: inline-block !important;
 }
 
-/*coloured borders at top and bottom of the page*/
+/* colored borders at top and bottom of the page */
 .navbar.navbar-default {
     border-top: var(--border-width) solid var(--accent);
 }
