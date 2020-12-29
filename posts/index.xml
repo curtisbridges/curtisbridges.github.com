@@ -11,10 +11,10 @@
         
         <item>
             <title>Fish shell via Homebrew on macOS</title>
-            <link>https://curtisbridges.com/fish-shell-via-homebrew-on-macos/</link>
+            <link>https://curtisbridges.com/posts/fish-shell-via-homebrew-on-macos/</link>
             <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
             
-            <guid>https://curtisbridges.com/fish-shell-via-homebrew-on-macos/</guid>
+            <guid>https://curtisbridges.com/posts/fish-shell-via-homebrew-on-macos/</guid>
             <description>How to install and configure fish shell on macOS via homebrew. This is mostly for my future self to reference, but just in case anyone else finds it useful, here is how I setup fish shell on macOS.
  brew install fish Add /usr/local/bin/fish to /etc/shells chsh -s /usr/local/bin/fish [Recommended] Create config directories and files:  Create mkdir -p ~/.config/fish and touch ~/.config/fish/config.fish. This config file will be used for other optional installs such as Starship, below.</description>
             <content type="html"><![CDATA[<h1 id="how-to-install-and-configure-fishhttpsfishshellcom-shell-on-macos-via-homebrew">How to install and configure <a href="https://fishshell.com">fish</a> shell on macOS via homebrew.</h1>
@@ -72,10 +72,10 @@ fish-spec	git		omf		tab
         
         <item>
             <title>XDG Base Directories</title>
-            <link>https://curtisbridges.com/xdg-base-directories/</link>
+            <link>https://curtisbridges.com/posts/xdg-base-directories/</link>
             <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
             
-            <guid>https://curtisbridges.com/xdg-base-directories/</guid>
+            <guid>https://curtisbridges.com/posts/xdg-base-directories/</guid>
             <description>I decided to move all of my home directory &amp;ldquo;dot clutter&amp;rdquo; to use $XDG_CONFIG_HOME (.config) rather than just dumping everything into the home directory. XDG directories are a way for a user to specify where configuration files exist on the system.
 I searched the man pages of the apps and programs I use and checked to see if they supported this feature. A lot did, but many do not. Here is the best resource I found for XDG and what level of support most apps have for the standard.</description>
             <content type="html"><![CDATA[<p>I decided to move all of my home directory &ldquo;dot clutter&rdquo; to use <code>$XDG_CONFIG_HOME</code> (.config) rather than just dumping everything into the home directory. <a href="https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html">XDG directories</a> are a way for a user to specify where configuration files exist on the system.</p>
@@ -113,10 +113,10 @@ export PAGER=&quot;less&quot;
         
         <item>
             <title>Trash files from the command line</title>
-            <link>https://curtisbridges.com/trash-files-from-the-command-line/</link>
+            <link>https://curtisbridges.com/posts/trash-files-from-the-command-line/</link>
             <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://curtisbridges.com/trash-files-from-the-command-line/</guid>
+            <guid>https://curtisbridges.com/posts/trash-files-from-the-command-line/</guid>
             <description>I often use the rm and rmdir commands from the command line as any normal shell user does. However, there are times when I want to move files to the macOS trash, just in case I need to restore them for whatever reason. I wondered &amp;ndash; is there a utility for this?
 Of course there is.
 After a quick Google, I found this: https://hasseg.org/trash/. As the page suggests, you can install via Homebrew:</description>
@@ -136,10 +136,10 @@ specific cases.</p>
         
         <item>
             <title>GitHub Access Behind Firewalls</title>
-            <link>https://curtisbridges.com/github-access-behind-firewalls/</link>
+            <link>https://curtisbridges.com/posts/github-access-behind-firewalls/</link>
             <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://curtisbridges.com/github-access-behind-firewalls/</guid>
+            <guid>https://curtisbridges.com/posts/github-access-behind-firewalls/</guid>
             <description>I had to get new tires and an oil change. I wanted to use the downtime to get some work done from the Dunkins&#39; next door. I sat down, with my laptop, attempting to get some coding done from a chair in the corner. I attempted to pull down a repository from GitHub and saw:
 ssh: connect to host github.com port 22: Connection timed out After some Googling, I discovered this solution: https://stackoverflow.</description>
             <content type="html"><![CDATA[<p>I had to get new tires and an oil change. I wanted to use the downtime to get some work done from the Dunkins' next door. I sat down, with my laptop, attempting to get some coding done from a chair in the corner. I attempted to pull down a repository from GitHub and saw:</p>
@@ -155,10 +155,10 @@ ssh: connect to host github.com port 22: Connection timed out After some Googlin
         
         <item>
             <title>Running Jekyll using Docker</title>
-            <link>https://curtisbridges.com/running-jekyll-using-docker/</link>
+            <link>https://curtisbridges.com/posts/running-jekyll-using-docker/</link>
             <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://curtisbridges.com/running-jekyll-using-docker/</guid>
+            <guid>https://curtisbridges.com/posts/running-jekyll-using-docker/</guid>
             <description>&lt;p&gt;Ruby and I don&amp;rsquo;t get along.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Ruby and I don&rsquo;t get along.</p>
 <p>I tried several methods to get a proper Jekyll install working on my dev computer. I&rsquo;m not a ruby person; eventually, I could have figured it out. I wanted a better solution than having to learn enough of the ruby ecosystem and hoping that I would remember enough long-term to keep it stable on my system.</p>
@@ -206,10 +206,10 @@ Localhost will also work rather than the Docker specific 0.0.0.0.</p>
         
         <item>
             <title>Firsts</title>
-            <link>https://curtisbridges.com/firsts/</link>
+            <link>https://curtisbridges.com/posts/firsts/</link>
             <pubDate>Tue, 18 Jul 2017 00:00:00 +0000</pubDate>
             
-            <guid>https://curtisbridges.com/firsts/</guid>
+            <guid>https://curtisbridges.com/posts/firsts/</guid>
             <description>&lt;p&gt;I&#39;ve been reading Ray Bradbury&#39;s &lt;a href=&#34;http://amzn.to/2tm3XGF&#34;&gt;Zen in The Art of Writing&lt;/a&gt;. Books written by authors about writing always affect me the same way &amp;ndash; I get incredibly excited about the process and product of creation.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>I've been reading Ray Bradbury's <a href="http://amzn.to/2tm3XGF">Zen in The Art of Writing</a>. Books written by authors about writing always affect me the same way &ndash; I get incredibly excited about the process and product of creation.</p>
 <p>In Bradbury&rsquo;s case, this also holds true; his book is a call to arms. Anyone with an interest in writing can find wisdom in his words and methods.</p>]]></content>
@@ -217,10 +217,10 @@ Localhost will also work rather than the Docker specific 0.0.0.0.</p>
         
         <item>
             <title>Raven Intelligence</title>
-            <link>https://curtisbridges.com/raven-intelligence/</link>
+            <link>https://curtisbridges.com/posts/raven-intelligence/</link>
             <pubDate>Tue, 18 Jul 2017 00:00:00 +0000</pubDate>
             
-            <guid>https://curtisbridges.com/raven-intelligence/</guid>
+            <guid>https://curtisbridges.com/posts/raven-intelligence/</guid>
             <description>&lt;blockquote&gt;
 &lt;p&gt;Ravens can plan for future needs that they never encounter in nature, suggesting intelligence may arise predictably from conditions that occurred multiple times across the tree of life.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -233,10 +233,10 @@ Localhost will also work rather than the Docker specific 0.0.0.0.</p>
         
         <item>
             <title>First Post</title>
-            <link>https://curtisbridges.com/first-post/</link>
+            <link>https://curtisbridges.com/posts/first-post/</link>
             <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
             
-            <guid>https://curtisbridges.com/first-post/</guid>
+            <guid>https://curtisbridges.com/posts/first-post/</guid>
             <description>&lt;p&gt;This is the first post of my new site. I&amp;rsquo;m looking to post thoughts, opinions, and links from around the web, book reviews, my current projects from GitHub and my online portfolio.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>This is the first post of my new site. I&rsquo;m looking to post thoughts, opinions, and links from around the web, book reviews, my current projects from GitHub and my online portfolio.</p>
 <p>I&rsquo;ll also be posting about my continued learning with coding projects, some will be iOS learning and others will be web-based technologies.</p>
@@ -245,10 +245,10 @@ Localhost will also work rather than the Docker specific 0.0.0.0.</p>
         
         <item>
             <title>Big Nerd Ranch, Beginning iOS - Day 7</title>
-            <link>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-7/</link>
+            <link>https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-7/</link>
             <pubDate>Sun, 19 Oct 2014 00:00:00 +0000</pubDate>
             
-            <guid>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-7/</guid>
+            <guid>https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-7/</guid>
             <description>&lt;p&gt;Day 7 was very different from the previous days at the Ranch. It is mostly a catch-all day for miscellaneous topics that came up throughout the week as well as a discussion on tools.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Day 7 was very different from the previous days at the Ranch. It is mostly a catch-all day for miscellaneous topics that came up throughout the week as well as a discussion on tools.</p>
 <p>I was impressed by some of the built in features of both Xcode, the debugger, and instrumentation. In particular, I was shocked by all the options available for debugging with breakpoints; conditional breakpoints, computer speach of pre-defined text triggered from breakpoints, and many other options.</p>
@@ -330,10 +330,10 @@ UIView.animateWithDuration(<span style="color:#ae81ff">0.6</span>, delay: <span 
         
         <item>
             <title>Big Nerd Ranch, Beginning iOS - Day 6</title>
-            <link>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-6/</link>
+            <link>https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-6/</link>
             <pubDate>Sat, 18 Oct 2014 00:00:00 +0000</pubDate>
             
-            <guid>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-6/</guid>
+            <guid>https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-6/</guid>
             <description>&lt;p&gt;Day 6 has come and gone and the amount of code and hours involved with this training is starting to take its toll on the level of energy.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Day 6 has come and gone and the amount of code and hours involved with this training is starting to take its toll on the level of energy.</p>
 <p>That said, the day starts off with some really interesting topics that help invigorate me personally. Storyboards are something that Apple appears to be pushing more of late and I think are the most efficient future of iOS UI development.</p>
@@ -347,10 +347,10 @@ UIView.animateWithDuration(<span style="color:#ae81ff">0.6</span>, delay: <span 
         
         <item>
             <title>Big Nerd Ranch, Beginning iOS - Day 5</title>
-            <link>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-5/</link>
+            <link>https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-5/</link>
             <pubDate>Fri, 17 Oct 2014 00:00:00 +0000</pubDate>
             
-            <guid>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-5/</guid>
+            <guid>https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-5/</guid>
             <description>&lt;p&gt;Day 5 continued, once again, where the previous day left off – which is to say, more user interface topics.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Day 5 continued, once again, where the previous day left off – which is to say, more user interface topics.</p>
 <p>We dove right in to Auto Layout, using contraints to dynamically control the layout of our user interface elements on the screen. Along the way, Christian showed us some common mistakes and the corresponding errors displayed in Interface Builder or the app console and how to fix them. It is amazing to me how much more polished an app looks when it behaves and looks correct on different devices and orientations.</p>
@@ -364,10 +364,10 @@ UIView.animateWithDuration(<span style="color:#ae81ff">0.6</span>, delay: <span 
         
         <item>
             <title>Big Nerd Ranch, Beginning iOS - Day 4</title>
-            <link>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-4/</link>
+            <link>https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-4/</link>
             <pubDate>Thu, 16 Oct 2014 00:00:00 +0000</pubDate>
             
-            <guid>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-4/</guid>
+            <guid>https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-4/</guid>
             <description>&lt;p&gt;Coming off yesterday’s high, I was very much looking forward to today.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Coming off yesterday’s high, I was very much looking forward to today.</p>
 <p>Today started an entirely new project, a home inventory app. This app is designed with a table view, a control used constantly in iOS apps and within iOS itself. Given its widespread use, this is an important day of hands-on training.</p>
@@ -381,10 +381,10 @@ UIView.animateWithDuration(<span style="color:#ae81ff">0.6</span>, delay: <span 
         
         <item>
             <title>Big Nerd Ranch, Beginning iOS - Day 3</title>
-            <link>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-3/</link>
+            <link>https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-3/</link>
             <pubDate>Wed, 15 Oct 2014 00:00:00 +0000</pubDate>
             
-            <guid>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-3/</guid>
+            <guid>https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-3/</guid>
             <description>&lt;p&gt;Day 3 is a key day for this course: this is when we first get into the frameworks and APIs that allow us to actually program for iOS.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;I was not disappointed.&lt;/strong&gt;&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Day 3 is a key day for this course: this is when we first get into the frameworks and APIs that allow us to actually program for iOS.</p>
@@ -398,10 +398,10 @@ UIView.animateWithDuration(<span style="color:#ae81ff">0.6</span>, delay: <span 
         
         <item>
             <title>Big Nerd Ranch, Beginning iOS - Day 2</title>
-            <link>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-2/</link>
+            <link>https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-2/</link>
             <pubDate>Tue, 14 Oct 2014 00:00:00 +0000</pubDate>
             
-            <guid>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-2/</guid>
+            <guid>https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-2/</guid>
             <description>&lt;p&gt;The second day of courses really expands upon the basics learned in the pre-reading and day 1 content.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>The second day of courses really expands upon the basics learned in the pre-reading and day 1 content.</p>
 <p>It mostly is centered around the object oriented parts of the language such as structs and classes, their properties and initializers, protocols (interfaces) and generics. Swift also adds the concept of extensions and carries forward Apple’s Objective-C automatic reference counting (ARC).</p>
@@ -419,10 +419,10 @@ UIView.animateWithDuration(<span style="color:#ae81ff">0.6</span>, delay: <span 
         
         <item>
             <title>Big Nerd Ranch, Beginning iOS - Day 1</title>
-            <link>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-1/</link>
+            <link>https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-1/</link>
             <pubDate>Mon, 13 Oct 2014 00:00:00 +0000</pubDate>
             
-            <guid>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-1/</guid>
+            <guid>https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-1/</guid>
             <description>&lt;p&gt;Day 1 picks up after the pre-reading with more basic programming language constructs common to other languages. Arrays, dictionaries, functions, and enumerations. In addition, Swift adds a few more concepts that I have not used professionally yet – Ooptionals and closures.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Day 1 picks up after the pre-reading with more basic programming language constructs common to other languages. Arrays, dictionaries, functions, and enumerations. In addition, Swift adds a few more concepts that I have not used professionally yet – Ooptionals and closures.</p>
 <p>The instructors at Big Nerd Ranch really encourage you to type out all the example code in the chapter as it helps reinforce the concepts being introduced. I’m taking the approach that if typing the examples is good then typing the example code and the slides should be better. Hopefully RSI doesn’t creep in by the end of the week…</p>
@@ -433,10 +433,10 @@ UIView.animateWithDuration(<span style="color:#ae81ff">0.6</span>, delay: <span 
         
         <item>
             <title>Big Nerd Ranch, Beginning iOS - Day 0</title>
-            <link>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-0/</link>
+            <link>https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-0/</link>
             <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
             
-            <guid>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-0/</guid>
+            <guid>https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-0/</guid>
             <description>&lt;p&gt;This week, I’ll be participating in an offsite training program developed by Big Nerd Ranch outside of Atlanta, Georgia.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>This week, I’ll be participating in an offsite training program developed by Big Nerd Ranch outside of Atlanta, Georgia.</p>
 <p>I’m very much looking forward to some dedicated learning and programming time since it is so hard to come by in my typical day-to-day life. I’ll be basking in the glory of 7 days of classroom learning, programming labs, and projects.</p>

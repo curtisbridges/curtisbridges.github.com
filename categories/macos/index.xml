@@ -10,20 +10,20 @@
     <lastBuildDate>Tue, 22 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://curtisbridges.com/categories/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fish shell via Homebrew on macOS</title>
-      <link>https://curtisbridges.com/fish-shell-via-homebrew-on-macos/</link>
+      <link>https://curtisbridges.com/posts/fish-shell-via-homebrew-on-macos/</link>
       <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://curtisbridges.com/fish-shell-via-homebrew-on-macos/</guid>
+      <guid>https://curtisbridges.com/posts/fish-shell-via-homebrew-on-macos/</guid>
       <description>How to install and configure fish shell on macOS via homebrew. This is mostly for my future self to reference, but just in case anyone else finds it useful, here is how I setup fish shell on macOS.
  brew install fish Add /usr/local/bin/fish to /etc/shells chsh -s /usr/local/bin/fish [Recommended] Create config directories and files:  Create mkdir -p ~/.config/fish and touch ~/.config/fish/config.fish. This config file will be used for other optional installs such as Starship, below.</description>
     </item>
     
     <item>
       <title>XDG Base Directories</title>
-      <link>https://curtisbridges.com/xdg-base-directories/</link>
+      <link>https://curtisbridges.com/posts/xdg-base-directories/</link>
       <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://curtisbridges.com/xdg-base-directories/</guid>
+      <guid>https://curtisbridges.com/posts/xdg-base-directories/</guid>
       <description>I decided to move all of my home directory &amp;ldquo;dot clutter&amp;rdquo; to use $XDG_CONFIG_HOME (.config) rather than just dumping everything into the home directory. XDG directories are a way for a user to specify where configuration files exist on the system.
 I searched the man pages of the apps and programs I use and checked to see if they supported this feature. A lot did, but many do not. Here is the best resource I found for XDG and what level of support most apps have for the standard.</description>
     </item>

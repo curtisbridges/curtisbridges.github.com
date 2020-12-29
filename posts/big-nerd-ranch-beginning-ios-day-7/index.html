@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Curtis Bridges ">
+<meta name="description" content="Day 7 was very different from the previous days at the Ranch. It is mostly a catch-all day for miscellaneous topics that came up throughout the week as well as a discussion on tools.
+" />
+<meta name="keywords" content="software developer ios javascript web, swift" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#4b4c4c" />
+<link rel="canonical" href="https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-7/" />
+
+
+    <title>
+        
+            Big Nerd Ranch, Beginning iOS - Day 7 :: Curtis Bridges  — Curtis Bridges Homepage
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://curtisbridges.com/main.393856bf2c430bb6c01d7af07c6fe966e7cce8073435cfbbc46e590bab7405ef.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://curtisbridges.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://curtisbridges.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://curtisbridges.com/favicon-16x16.png">
+    <link rel="manifest" href="https://curtisbridges.com/site.webmanifest">
+    <link rel="mask-icon" href="https://curtisbridges.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://curtisbridges.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="Big Nerd Ranch, Beginning iOS - Day 7">
+<meta itemprop="description" content="Day 7 was very different from the previous days at the Ranch. It is mostly a catch-all day for miscellaneous topics that came up throughout the week as well as a discussion on tools.">
+<meta itemprop="datePublished" content="2014-10-19T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2014-10-19T00:00:00+00:00" />
+<meta itemprop="wordCount" content="581">
+<meta itemprop="image" content="https://curtisbridges.com"/>
+
+
+
+<meta itemprop="keywords" content="swift," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://curtisbridges.com"/>
+
+<meta name="twitter:title" content="Big Nerd Ranch, Beginning iOS - Day 7"/>
+<meta name="twitter:description" content="Day 7 was very different from the previous days at the Ranch. It is mostly a catch-all day for miscellaneous topics that came up throughout the week as well as a discussion on tools."/>
+
+
+
+    <meta property="og:title" content="Big Nerd Ranch, Beginning iOS - Day 7" />
+<meta property="og:description" content="Day 7 was very different from the previous days at the Ranch. It is mostly a catch-all day for miscellaneous topics that came up throughout the week as well as a discussion on tools." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-7/" />
+<meta property="og:image" content="https://curtisbridges.com"/>
+<meta property="article:published_time" content="2014-10-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-10-19T00:00:00+00:00" />
+
+
+
+
+
+
+    <meta property="article:published_time" content="2014-10-19 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://curtisbridges.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   background-color:#67a2c9;
+                   animation-duration:2s;">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://curtisbridges.com/about/">About</a></li><li><a href="https://curtisbridges.com/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        3 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-7/">Big Nerd Ranch, Beginning iOS - Day 7</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p>Day 7 was very different from the previous days at the Ranch. It is mostly a catch-all day for miscellaneous topics that came up throughout the week as well as a discussion on tools.</p>
+<p>I was impressed by some of the built in features of both Xcode, the debugger, and instrumentation. In particular, I was shocked by all the options available for debugging with breakpoints; conditional breakpoints, computer speach of pre-defined text triggered from breakpoints, and many other options.</p>
+<p>Next we reviewed memory leak analysis using Instrument templates. We worked through a fairly contrived (but relevant) example where the tools correctly found an ARC leak.</p>
+<p>The rest of the day was picking up random topics of interest. Christian demonstrated some of his techniques of debugging Auto Layout constraints with Size Classes by setting the canvas in free form mode and resizing it to see how the layout behaves. I’ve used this technique for years for correctly developing desktop applications with resizable windows so I’m very glad to see it replicated in the iOS tools. While he was at it, we saw a demonstration for constraint inequalities and how they affect animation, which led perfectly into the next topic…</p>
+<p>Animations.</p>
+<p>I was impressed with how easy iOS makes animating interface elements. In a lot of cases, it can simply be achieved via a call to:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">UIView.animateWithDuration(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#66d9ef">_</span>: animations: () -&gt; ())
+<span style="color:#75715e">// with a start state before the call and the desired end state within the closure.</span>
+<span style="color:#75715e">// There we variations on this as well such as Spring animations:</span>
+
+UIView.animateWithDuration(<span style="color:#ae81ff">0.6</span>, delay: <span style="color:#ae81ff">0.0</span>, usingSpringWithDampening: <span style="color:#ae81ff">0.2</span>, initialSpringVelocity: <span style="color:#ae81ff">0.0</span>,
+    options: UIViewAnimationOptions.something, animations: { () -&gt; Void <span style="color:#66d9ef">in</span>
+        <span style="color:#75715e">// .. finishing code</span>
+        }, completion: <span style="color:#66d9ef">nil</span>)
+
+<span style="color:#75715e">// And keyframe animations:</span>
+<span style="color:#66d9ef">override</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">touchesEnded</span>(touches: NSSet, withEvent event: UIEVent) {
+    <span style="color:#66d9ef">let</span> touch = touches.anyObject() <span style="color:#66d9ef">as</span> UITouch
+    <span style="color:#66d9ef">let</span> loc = touch.locationInView(view)
+
+    <span style="color:#75715e">// Update constraints outside of animation closure</span>
+    topConstraint.constant = loc.y
+
+    UIView.animateWithDuration(<span style="color:#ae81ff">0.5</span>, animations: { () -&gt; Void <span style="color:#66d9ef">in</span>
+        <span style="color:#75715e">// Re-layout views inside animation closure</span>
+        <span style="color:#66d9ef">self</span>.view.layoutIfNeeded()
+
+        <span style="color:#75715e">// Update view properties inside animation closure</span>
+        <span style="color:#66d9ef">self</span>.view.backgroundColor = UIColor.redColor()
+    })
+}
+</code></pre></div><p>Finally, we picked up a topic covered in older editions of the book, location. I’m pleased we covered this topic, as it is something almost completely unique to the platform and something I hope to become familiar with soon (I like to jog).</p>
+<p>Our simple example in Swift:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">CoreLocation</span>
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">MapKit</span>
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">UIKit</span>
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ViewController</span>: UIViewController, CLLocationManagerDelegate {
+    <span style="color:#66d9ef">@IBOutlet</span> <span style="color:#66d9ef">weak</span> <span style="color:#66d9ef">var</span> mapView: MKMapView!
+    <span style="color:#66d9ef">let</span> locationManager = CLLocationManager()
+
+    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">viewDidLoad</span>() {
+        <span style="color:#66d9ef">super</span>.viewDidLoad()
+
+        locationmanager.requestWhenInUseAuthorization()
+
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.distanceFilter = <span style="color:#ae81ff">10.0</span> <span style="color:#75715e">// how far the user needs to move before you get updates</span>
+        locationManager.delegate = <span style="color:#66d9ef">self</span>
+        locationManager.startUpdateingLocation()
+    }
+
+    <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">locationManager</span>(manager: CLLOcationManager!, didUpdateLocations locations: [AnyObject]<span style="color:#f92672">!</span>) {
+        println(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">\(</span>locations<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
+
+        <span style="color:#75715e">// CLLocation: coordinate, altitude, horizontal and vertical accuracy</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> currentLocation = locations.last <span style="color:#66d9ef">as</span>? CLLocation {
+            <span style="color:#75715e">// We found a location</span>
+            mapView.setCenterCoordinate(currentLocation.coordinate, animated: <span style="color:#66d9ef">true</span>)
+
+            <span style="color:#66d9ef">let</span> span = MKCoordinateRegionMake(<span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">0.01</span>)
+            <span style="color:#66d9ef">let</span> region = MKCoordinateRegionMake(currentLocation.coordinate, span)
+            mapView.setRegion(region, animated: <span style="color:#66d9ef">true</span>)
+
+            <span style="color:#66d9ef">if</span> currentLocation.horizontalAccuracy <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">20.0</span> {
+                manager.stopUpdatingLocation()
+            }
+        }
+    }
+
+    <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">locationManager</span>(manager: CLLocationManager!, didFailWithError error: NSError!) {
+        println(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">\(</span>error<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
+    }
+}
+</code></pre></div><p>And so ended my Big Nerd Ranch course. It was such an incredible experience and I highly recommend anyone interested in one of the course topics taught by Big Nerd Ranch to give them serious consideration; the environment is completely unique and they certainly aren’t lying when they say it is “monastic like”. The lack of external distractions of the real world certainly went a long way in helping become immersed in the material.</p>
+<p>I hope to put it to good use soon.</p>
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://curtisbridges.com/tags/swift/">swift</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        581 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2014-10-18 20:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="https://curtisbridges.com/posts/first-post/">
+                <span class="button__icon">←</span>
+                <span class="button__text">First Post</span>
+              </a>
+            </span>
+          
+
+          
+            <span class="button next">
+              <a href="https://curtisbridges.com/posts/big-nerd-ranch-beginning-ios-day-6/">
+                <span class="button__text">Big Nerd Ranch, Beginning iOS - Day 6</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://curtisbridges.com">Curtis Bridges</a></span>
+            
+            
+                <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span><a href="https://curtisbridges.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+          </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://curtisbridges.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

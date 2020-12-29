@@ -10,19 +10,19 @@
     <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://curtisbridges.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Running Jekyll using Docker</title>
-      <link>https://curtisbridges.com/running-jekyll-using-docker/</link>
+      <link>https://curtisbridges.com/posts/running-jekyll-using-docker/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://curtisbridges.com/running-jekyll-using-docker/</guid>
+      <guid>https://curtisbridges.com/posts/running-jekyll-using-docker/</guid>
       <description>&lt;p&gt;Ruby and I don&amp;rsquo;t get along.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>First Post</title>
-      <link>https://curtisbridges.com/first-post/</link>
+      <link>https://curtisbridges.com/posts/first-post/</link>
       <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://curtisbridges.com/first-post/</guid>
+      <guid>https://curtisbridges.com/posts/first-post/</guid>
       <description>&lt;p&gt;This is the first post of my new site. I&amp;rsquo;m looking to post thoughts, opinions, and links from around the web, book reviews, my current projects from GitHub and my online portfolio.&lt;/p&gt;</description>
     </item>
     
