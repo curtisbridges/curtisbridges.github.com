@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Curtis Bridges</title>
+    <link>https://curtisbridges.com/</link>
+    <description>Recent content on Curtis Bridges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 22 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://curtisbridges.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://curtisbridges.com/about/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/about/</guid>
+      <description>Hi. I&amp;rsquo;m a fullstack javascript and ios developer based in Auburn, New Hampshire where I live with my wife and two children.
+My hobbies include photography, hiking, camping, running, biking, and reading.</description>
+    </item>
+    
+    <item>
+      <title>Fish shell via Homebrew on macOS</title>
+      <link>https://curtisbridges.com/fish-shell-via-homebrew-on-macos/</link>
+      <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/fish-shell-via-homebrew-on-macos/</guid>
+      <description>How to install and configure fish shell on macOS via homebrew. This is mostly for my future self to reference, but just in case anyone else finds it useful, here is how I setup fish shell on macOS.
+ brew install fish Add /usr/local/bin/fish to /etc/shells chsh -s /usr/local/bin/fish [Recommended] Create config directories and files:  Create mkdir -p ~/.config/fish and touch ~/.config/fish/config.fish. This config file will be used for other optional installs such as Starship, below.</description>
+    </item>
+    
+    <item>
+      <title>XDG Base Directories</title>
+      <link>https://curtisbridges.com/xdg-base-directories/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/xdg-base-directories/</guid>
+      <description>I decided to move all of my home directory &amp;ldquo;dot clutter&amp;rdquo; to use $XDG_CONFIG_HOME (.config) rather than just dumping everything into the home directory. XDG directories are a way for a user to specify where configuration files exist on the system.
+I searched the man pages of the apps and programs I use and checked to see if they supported this feature. A lot did, but many do not. Here is the best resource I found for XDG and what level of support most apps have for the standard.</description>
+    </item>
+    
+    <item>
+      <title>Trash files from the command line</title>
+      <link>https://curtisbridges.com/trash-files-from-the-command-line/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/trash-files-from-the-command-line/</guid>
+      <description>I often use the rm and rmdir commands from the command line as any normal shell user does. However, there are times when I want to move files to the macOS trash, just in case I need to restore them for whatever reason. I wondered &amp;ndash; is there a utility for this?
+Of course there is.
+After a quick Google, I found this: https://hasseg.org/trash/. As the page suggests, you can install via Homebrew:</description>
+    </item>
+    
+    <item>
+      <title>GitHub Access Behind Firewalls</title>
+      <link>https://curtisbridges.com/github-access-behind-firewalls/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/github-access-behind-firewalls/</guid>
+      <description>I had to get new tires and an oil change. I wanted to use the downtime to get some work done from the Dunkins&#39; next door. I sat down, with my laptop, attempting to get some coding done from a chair in the corner. I attempted to pull down a repository from GitHub and saw:
+ssh: connect to host github.com port 22: Connection timed out After some Googling, I discovered this solution: https://stackoverflow.</description>
+    </item>
+    
+    <item>
+      <title>Running Jekyll using Docker</title>
+      <link>https://curtisbridges.com/running-jekyll-using-docker/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/running-jekyll-using-docker/</guid>
+      <description>&lt;p&gt;Ruby and I don&amp;rsquo;t get along.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Firsts</title>
+      <link>https://curtisbridges.com/firsts/</link>
+      <pubDate>Tue, 18 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/firsts/</guid>
+      <description>&lt;p&gt;I&#39;ve been reading Ray Bradbury&#39;s &lt;a href=&#34;http://amzn.to/2tm3XGF&#34;&gt;Zen in The Art of Writing&lt;/a&gt;. Books written by authors about writing always affect me the same way &amp;ndash; I get incredibly excited about the process and product of creation.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Raven Intelligence</title>
+      <link>https://curtisbridges.com/raven-intelligence/</link>
+      <pubDate>Tue, 18 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/raven-intelligence/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Ravens can plan for future needs that they never encounter in nature, suggesting intelligence may arise predictably from conditions that occurred multiple times across the tree of life.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We&amp;rsquo;ve only just begun to explore intelligence in other species, and yet, we are constantly surprised by their capacity to think.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>First Post</title>
+      <link>https://curtisbridges.com/first-post/</link>
+      <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/first-post/</guid>
+      <description>&lt;p&gt;This is the first post of my new site. I&amp;rsquo;m looking to post thoughts, opinions, and links from around the web, book reviews, my current projects from GitHub and my online portfolio.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Big Nerd Ranch, Beginning iOS - Day 7</title>
+      <link>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-7/</link>
+      <pubDate>Sun, 19 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-7/</guid>
+      <description>&lt;p&gt;Day 7 was very different from the previous days at the Ranch. It is mostly a catch-all day for miscellaneous topics that came up throughout the week as well as a discussion on tools.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

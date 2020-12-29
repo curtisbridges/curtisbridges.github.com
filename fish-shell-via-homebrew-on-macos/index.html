@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Curtis Bridges ">
+<meta name="description" content="How to install and configure fish shell on macOS via homebrew. This is mostly for my future self to reference, but just in case anyone else finds it useful, here is how I setup fish shell on macOS.
+ brew install fish Add /usr/local/bin/fish to /etc/shells chsh -s /usr/local/bin/fish [Recommended] Create config directories and files:  Create mkdir -p ~/.config/fish and touch ~/.config/fish/config.fish. This config file will be used for other optional installs such as Starship, below." />
+<meta name="keywords" content="software developer ios javascript web, homebrew, shell" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#4b4c4c" />
+<link rel="canonical" href="https://curtisbridges.com/fish-shell-via-homebrew-on-macos/" />
+
+
+    <title>
+        
+            Fish shell via Homebrew on macOS :: Curtis Bridges  — Curtis Bridges Homepage
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://curtisbridges.com/main.393856bf2c430bb6c01d7af07c6fe966e7cce8073435cfbbc46e590bab7405ef.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://curtisbridges.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://curtisbridges.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://curtisbridges.com/favicon-16x16.png">
+    <link rel="manifest" href="https://curtisbridges.com/site.webmanifest">
+    <link rel="mask-icon" href="https://curtisbridges.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://curtisbridges.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="Fish shell via Homebrew on macOS">
+<meta itemprop="description" content="How to install and configure fish shell on macOS via homebrew. This is mostly for my future self to reference, but just in case anyone else finds it useful, here is how I setup fish shell on macOS.
+ brew install fish Add /usr/local/bin/fish to /etc/shells chsh -s /usr/local/bin/fish [Recommended] Create config directories and files:  Create mkdir -p ~/.config/fish and touch ~/.config/fish/config.fish. This config file will be used for other optional installs such as Starship, below.">
+<meta itemprop="datePublished" content="2020-12-22T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-12-22T00:00:00+00:00" />
+<meta itemprop="wordCount" content="426">
+<meta itemprop="image" content="https://curtisbridges.com"/>
+
+
+
+<meta itemprop="keywords" content="homebrew,shell," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://curtisbridges.com"/>
+
+<meta name="twitter:title" content="Fish shell via Homebrew on macOS"/>
+<meta name="twitter:description" content="How to install and configure fish shell on macOS via homebrew. This is mostly for my future self to reference, but just in case anyone else finds it useful, here is how I setup fish shell on macOS.
+ brew install fish Add /usr/local/bin/fish to /etc/shells chsh -s /usr/local/bin/fish [Recommended] Create config directories and files:  Create mkdir -p ~/.config/fish and touch ~/.config/fish/config.fish. This config file will be used for other optional installs such as Starship, below."/>
+
+
+
+    <meta property="og:title" content="Fish shell via Homebrew on macOS" />
+<meta property="og:description" content="How to install and configure fish shell on macOS via homebrew. This is mostly for my future self to reference, but just in case anyone else finds it useful, here is how I setup fish shell on macOS.
+ brew install fish Add /usr/local/bin/fish to /etc/shells chsh -s /usr/local/bin/fish [Recommended] Create config directories and files:  Create mkdir -p ~/.config/fish and touch ~/.config/fish/config.fish. This config file will be used for other optional installs such as Starship, below." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://curtisbridges.com/fish-shell-via-homebrew-on-macos/" />
+<meta property="og:image" content="https://curtisbridges.com"/>
+<meta property="article:published_time" content="2020-12-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-12-22T00:00:00+00:00" />
+
+
+
+
+    <meta property="article:section" content="homebrew" />
+
+    <meta property="article:section" content="macos" />
+
+
+
+    <meta property="article:published_time" content="2020-12-22 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://curtisbridges.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   background-color:#67a2c9;
+                   animation-duration:2s;">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://curtisbridges.com/about/">About</a></li><li><a href="https://curtisbridges.com/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        2 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://curtisbridges.com/fish-shell-via-homebrew-on-macos/">Fish shell via Homebrew on macOS</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <h1 id="how-to-install-and-configure-fishhttpsfishshellcom-shell-on-macos-via-homebrew">How to install and configure <a href="https://fishshell.com">fish</a> shell on macOS via homebrew.</h1>
+<p>This is mostly for my future self to reference, but just in case anyone else finds it useful, here is how I setup fish shell on macOS.</p>
+<ol>
+<li><code>brew install fish</code></li>
+<li>Add <code>/usr/local/bin/fish</code> to <code>/etc/shells</code></li>
+<li><code>chsh -s /usr/local/bin/fish</code></li>
+<li>[Recommended] Create config directories and files:
+<ol>
+<li>Create <code>mkdir -p ~/.config/fish</code> and <code>touch ~/.config/fish/config.fish</code>. This config file will be used for other optional installs such as Starship, below.</li>
+<li>Create <code>mkdir -p ~/config/fish/conf.d</code>. Any files placed in this directory will automatically be sourced by fish on startup. I have my abbreviations (abbr) and oh-my-fish files here.</li>
+</ol>
+</li>
+<li>Remove intro to fish message: <code>set fish_greeting</code></li>
+<li>[Optional] Enable vi keybinds <code>fish_vi_key_bindings</code></li>
+<li>[Recommended] Install <a href="https://github.com/oh-my-fish/oh-my-fish">oh-my-fish</a>
+<ol>
+<li>[Optional] Install <a href="https://github.com/jhillyerd/plugin-git">git plugin</a> <code>omf install https://github.com/jhillyerd/plugin-git</code></li>
+<li>[Optional] Install <a href="https://github.com/fishgretel/fasd">fasd plugin</a> <code>omf install fasd</code></li>
+<li>[Optional] Install <a href="https://github.com/oh-my-fish/plugin-osx">osx plugin</a> <code>omf install osx</code></li>
+<li>[Optional] Install <a href="https://github.com/oh-my-fish/plugin-tab">tab plugin</a> <code>omf install tab</code></li>
+</ol>
+</li>
+<li>[Recommended] Install <a href="https://starship.rs">Starship prompt</a></li>
+</ol>
+<h2 id="likes">Likes:</h2>
+<ol>
+<li>text-replacement style aliases (abbr)</li>
+<li>rich autocomplete via man page parsing</li>
+<li>It&rsquo;s something new and different. I&rsquo;ve used (in order): csh, tcsh, bash, zsh. Those all feel like the same family. Fish feels like something totally different. A little less UNIX-y and a little more&hellip; python-y?</li>
+</ol>
+<h2 id="dislikes">Dislikes:</h2>
+<ol>
+<li>Terminal.app spawns bash shells on every command for some unknown reason. Use <a href="https://iterm2.com">iTerm2</a> instead. I&rsquo;ll eventually have to solve this one. I prefer the built-in apps unless there is a very large feature gap to third party solutions. (iTerm2 arguably is exactly that)</li>
+<li>Fish is not POSIX compliant; this was known before installing. It is just something to be aware of. Use <code>/bin/sh</code> for most scripts anyway.</li>
+<li>Does not support escaping commands. I have a few commands that I like more modern, feature-rich versions of (cat &ndash;&gt; bat, top &ndash;&gt; htop, vim &ndash;&gt; nvim) but there are times where you want the plain old version executed. In zsh, I can escape the command by prepending backslash: <code>\cat .zshrc</code>. Fish won&rsquo;t recognize that syntax so I have to edit my abbreviation replacement.</li>
+</ol>
+<h2 id="follow-up-1">Follow-Up 1</h2>
+<ol>
+<li>All terminals (not just Terminal.app) were spawning zombie bash shells (on macOS) and sh (on Pop! OS)</li>
+<li>Tracking down the cullprit: omf plugin for fasd. Removing it fixed the per-command-zombie process!</li>
+</ol>
+<h2 id="follow-up-2">Follow-Up 2</h2>
+<ol>
+<li>Dotfiles - I like to maintain all my settings in a dotfiles repository for easy deployment and versioning. Fish and Oh-My-Fish are no exceptions. All of the fish settings are in <code>~/.config/fish</code> and omf reside in <code>~/.config/omf</code>. Make sure those are versioned for easy deployment.</li>
+<li>I&rsquo;ve added the following omf plugins:</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">❯ omf list
+Plugins
+bang-bang	fzf.fish	git-flow	osx		xcode
+fish-spec	git		omf		tab
+</code></pre></div>
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://curtisbridges.com/tags/homebrew/">homebrew</a></span>
+        <span class="tag"><a href="https://curtisbridges.com/tags/shell/">shell</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://curtisbridges.com/categories/homebrew/">homebrew</a></span>
+        <span class="tag"><a href="https://curtisbridges.com/categories/macos/">macos</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        426 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2020-12-21 19:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+
+          
+            <span class="button next">
+              <a href="https://curtisbridges.com/xdg-base-directories/">
+                <span class="button__text">XDG Base Directories</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://curtisbridges.com">Curtis Bridges</a></span>
+            
+            
+                <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span><a href="https://curtisbridges.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+          </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://curtisbridges.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

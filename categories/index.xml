@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Curtis Bridges</title>
+    <link>https://curtisbridges.com/categories/</link>
+    <description>Recent content in Categories on Curtis Bridges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 22 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://curtisbridges.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>homebrew</title>
+      <link>https://curtisbridges.com/categories/homebrew/</link>
+      <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/categories/homebrew/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>macos</title>
+      <link>https://curtisbridges.com/categories/macos/</link>
+      <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/categories/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://curtisbridges.com/categories/linux/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://curtisbridges.com/categories/shell/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/categories/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>commandline</title>
+      <link>https://curtisbridges.com/categories/commandline/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/categories/commandline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>https://curtisbridges.com/categories/blog/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devtool</title>
+      <link>https://curtisbridges.com/categories/devtool/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/categories/devtool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>learning</title>
+      <link>https://curtisbridges.com/categories/learning/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/categories/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bootcamp</title>
+      <link>https://curtisbridges.com/categories/bootcamp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/categories/bootcamp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>education</title>
+      <link>https://curtisbridges.com/categories/education/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://curtisbridges.com/categories/education/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

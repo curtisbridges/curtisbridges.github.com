@@ -1,0 +1,451 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Curtis Bridges</title>
+        <link>https://curtisbridges.com/posts/</link>
+        <description>Recent content in Posts on Curtis Bridges</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Tue, 22 Dec 2020 00:00:00 +0000</lastBuildDate>
+        <atom:link href="https://curtisbridges.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Fish shell via Homebrew on macOS</title>
+            <link>https://curtisbridges.com/fish-shell-via-homebrew-on-macos/</link>
+            <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
+            
+            <guid>https://curtisbridges.com/fish-shell-via-homebrew-on-macos/</guid>
+            <description>How to install and configure fish shell on macOS via homebrew. This is mostly for my future self to reference, but just in case anyone else finds it useful, here is how I setup fish shell on macOS.
+ brew install fish Add /usr/local/bin/fish to /etc/shells chsh -s /usr/local/bin/fish [Recommended] Create config directories and files:  Create mkdir -p ~/.config/fish and touch ~/.config/fish/config.fish. This config file will be used for other optional installs such as Starship, below.</description>
+            <content type="html"><![CDATA[<h1 id="how-to-install-and-configure-fishhttpsfishshellcom-shell-on-macos-via-homebrew">How to install and configure <a href="https://fishshell.com">fish</a> shell on macOS via homebrew.</h1>
+<p>This is mostly for my future self to reference, but just in case anyone else finds it useful, here is how I setup fish shell on macOS.</p>
+<ol>
+<li><code>brew install fish</code></li>
+<li>Add <code>/usr/local/bin/fish</code> to <code>/etc/shells</code></li>
+<li><code>chsh -s /usr/local/bin/fish</code></li>
+<li>[Recommended] Create config directories and files:
+<ol>
+<li>Create <code>mkdir -p ~/.config/fish</code> and <code>touch ~/.config/fish/config.fish</code>. This config file will be used for other optional installs such as Starship, below.</li>
+<li>Create <code>mkdir -p ~/config/fish/conf.d</code>. Any files placed in this directory will automatically be sourced by fish on startup. I have my abbreviations (abbr) and oh-my-fish files here.</li>
+</ol>
+</li>
+<li>Remove intro to fish message: <code>set fish_greeting</code></li>
+<li>[Optional] Enable vi keybinds <code>fish_vi_key_bindings</code></li>
+<li>[Recommended] Install <a href="https://github.com/oh-my-fish/oh-my-fish">oh-my-fish</a>
+<ol>
+<li>[Optional] Install <a href="https://github.com/jhillyerd/plugin-git">git plugin</a> <code>omf install https://github.com/jhillyerd/plugin-git</code></li>
+<li>[Optional] Install <a href="https://github.com/fishgretel/fasd">fasd plugin</a> <code>omf install fasd</code></li>
+<li>[Optional] Install <a href="https://github.com/oh-my-fish/plugin-osx">osx plugin</a> <code>omf install osx</code></li>
+<li>[Optional] Install <a href="https://github.com/oh-my-fish/plugin-tab">tab plugin</a> <code>omf install tab</code></li>
+</ol>
+</li>
+<li>[Recommended] Install <a href="https://starship.rs">Starship prompt</a></li>
+</ol>
+<h2 id="likes">Likes:</h2>
+<ol>
+<li>text-replacement style aliases (abbr)</li>
+<li>rich autocomplete via man page parsing</li>
+<li>It&rsquo;s something new and different. I&rsquo;ve used (in order): csh, tcsh, bash, zsh. Those all feel like the same family. Fish feels like something totally different. A little less UNIX-y and a little more&hellip; python-y?</li>
+</ol>
+<h2 id="dislikes">Dislikes:</h2>
+<ol>
+<li>Terminal.app spawns bash shells on every command for some unknown reason. Use <a href="https://iterm2.com">iTerm2</a> instead. I&rsquo;ll eventually have to solve this one. I prefer the built-in apps unless there is a very large feature gap to third party solutions. (iTerm2 arguably is exactly that)</li>
+<li>Fish is not POSIX compliant; this was known before installing. It is just something to be aware of. Use <code>/bin/sh</code> for most scripts anyway.</li>
+<li>Does not support escaping commands. I have a few commands that I like more modern, feature-rich versions of (cat &ndash;&gt; bat, top &ndash;&gt; htop, vim &ndash;&gt; nvim) but there are times where you want the plain old version executed. In zsh, I can escape the command by prepending backslash: <code>\cat .zshrc</code>. Fish won&rsquo;t recognize that syntax so I have to edit my abbreviation replacement.</li>
+</ol>
+<h2 id="follow-up-1">Follow-Up 1</h2>
+<ol>
+<li>All terminals (not just Terminal.app) were spawning zombie bash shells (on macOS) and sh (on Pop! OS)</li>
+<li>Tracking down the cullprit: omf plugin for fasd. Removing it fixed the per-command-zombie process!</li>
+</ol>
+<h2 id="follow-up-2">Follow-Up 2</h2>
+<ol>
+<li>Dotfiles - I like to maintain all my settings in a dotfiles repository for easy deployment and versioning. Fish and Oh-My-Fish are no exceptions. All of the fish settings are in <code>~/.config/fish</code> and omf reside in <code>~/.config/omf</code>. Make sure those are versioned for easy deployment.</li>
+<li>I&rsquo;ve added the following omf plugins:</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">❯ omf list
+Plugins
+bang-bang	fzf.fish	git-flow	osx		xcode
+fish-spec	git		omf		tab
+</code></pre></div>]]></content>
+        </item>
+        
+        <item>
+            <title>XDG Base Directories</title>
+            <link>https://curtisbridges.com/xdg-base-directories/</link>
+            <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+            
+            <guid>https://curtisbridges.com/xdg-base-directories/</guid>
+            <description>I decided to move all of my home directory &amp;ldquo;dot clutter&amp;rdquo; to use $XDG_CONFIG_HOME (.config) rather than just dumping everything into the home directory. XDG directories are a way for a user to specify where configuration files exist on the system.
+I searched the man pages of the apps and programs I use and checked to see if they supported this feature. A lot did, but many do not. Here is the best resource I found for XDG and what level of support most apps have for the standard.</description>
+            <content type="html"><![CDATA[<p>I decided to move all of my home directory &ldquo;dot clutter&rdquo; to use <code>$XDG_CONFIG_HOME</code> (.config) rather than just dumping everything into the home directory. <a href="https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html">XDG directories</a> are a way for a user to specify where configuration files exist on the system.</p>
+<p>I searched the man pages of the apps and programs I use and checked to see if they supported this feature. A lot did, but many do not. <a href="https://wiki.archlinux.org/index.php/XDG_Base_Directory">Here is the best resource</a> I found for XDG and what level of support most apps have for the standard.</p>
+<p>The main programs I was concerned with fixing were:</p>
+<ol>
+<li>shells (bash &amp; zsh)</li>
+<li>vim</li>
+<li>git</li>
+<li>terminals (iterm2, alacritty, kitty)</li>
+<li>tmux</li>
+</ol>
+<p>Given the preference, if a program does support the XDG specification, I&rsquo;d use it going forward.</p>
+<p>Most apps were straightforward. The hardest to move was zsh (I stopped using bash long ago anyway). Zsh only has partial XDG support; to use XDG with zsh, you have to &ldquo;bootstrap&rdquo; it with the <code>.zshenv</code> file. This file resides in your normal home directory and tells zsh how to find the rest of its normal configuration files. My <code>.zshenv</code> file looks like this:</p>
+<pre><code># this is the bare bones setup to move everything to XDG dir
+ZDOTDIR=$HOME/.config/zsh
+
+# Other XDG paths
+export XDG_DATA_HOME=${XDG_DATA_HOME:=&quot;$HOME/.local/share&quot;}
+export XDG_CACHE_HOME=${XDG_CACHE_HOME:=&quot;$HOME/.cache&quot;}
+export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:=&quot;$HOME/.config&quot;}
+
+# Default Apps
+export EDITOR=&quot;nvim&quot;
+export VISUAL=&quot;code -n&quot;
+export TERMINAL=&quot;iterm&quot;
+export BROWSER=&quot;safari&quot;
+export PAGER=&quot;less&quot;
+</code></pre><p>The important part is defining <code>ZDOTDIR</code>, which is where your <code>.zshrc</code> and other zsh config files reside.</p>
+<p>Additionally, I define the <code>$XDG_DATA_HOME</code>, <code>$XDG_CACHE_HOME</code>, and <code>$XDG_CONFIG_HOME</code> but using their defaults. This is mainly for my own reference, so I don&rsquo;t have to look them up lest I forget.</p>
+<p>Lastly, I define standard variables used by the system such as my editors, pagers, etc. This is optional but I find it handy in many situations.</p>
+<p>You can see all of this in action in my <a href="https://github.com/curtisbridges/dotfiles">dotfiles</a> repo on GitHub.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Trash files from the command line</title>
+            <link>https://curtisbridges.com/trash-files-from-the-command-line/</link>
+            <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://curtisbridges.com/trash-files-from-the-command-line/</guid>
+            <description>I often use the rm and rmdir commands from the command line as any normal shell user does. However, there are times when I want to move files to the macOS trash, just in case I need to restore them for whatever reason. I wondered &amp;ndash; is there a utility for this?
+Of course there is.
+After a quick Google, I found this: https://hasseg.org/trash/. As the page suggests, you can install via Homebrew:</description>
+            <content type="html"><![CDATA[<p>I often use the <code>rm</code> and <code>rmdir</code> commands from the command line as any normal shell user does.
+However, there are times when I want to move files to the macOS trash, just in case I need to
+restore them for whatever reason. I wondered &ndash; is there a utility for this?</p>
+<p>Of course there is.</p>
+<p>After a quick Google, I found this: <a href="https://hasseg.org/trash/">https://hasseg.org/trash/</a>. As
+the page suggests, you can install via Homebrew:</p>
+<pre><code>brew install trash
+</code></pre><p>Once installed, you can easily invoke it via:</p>
+<pre><code>trash foo.txt
+</code></pre><p>Granted, it isn&rsquo;t going to be a widely used command, but something I wanted to use in a few
+specific cases.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>GitHub Access Behind Firewalls</title>
+            <link>https://curtisbridges.com/github-access-behind-firewalls/</link>
+            <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://curtisbridges.com/github-access-behind-firewalls/</guid>
+            <description>I had to get new tires and an oil change. I wanted to use the downtime to get some work done from the Dunkins&#39; next door. I sat down, with my laptop, attempting to get some coding done from a chair in the corner. I attempted to pull down a repository from GitHub and saw:
+ssh: connect to host github.com port 22: Connection timed out After some Googling, I discovered this solution: https://stackoverflow.</description>
+            <content type="html"><![CDATA[<p>I had to get new tires and an oil change. I wanted to use the downtime to get some work done from the Dunkins' next door. I sat down, with my laptop, attempting to get some coding done from a chair in the corner. I attempted to pull down a repository from GitHub and saw:</p>
+<pre><code>ssh: connect to host github.com port 22: Connection timed out
+</code></pre><p>After some Googling, I discovered this solution: <a href="https://stackoverflow.com/a/52817036">https://stackoverflow.com/a/52817036</a></p>
+<p>In short, you can force git access to GitHub repos to an alternate server/port by editing your <code>~/.ssh/config</code> file:</p>
+<pre><code>Host github.com
+ Hostname ssh.github.com
+ Port 443
+</code></pre><p>After that, I could easily <code>git pull</code> until my heart&rsquo;s content!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Running Jekyll using Docker</title>
+            <link>https://curtisbridges.com/running-jekyll-using-docker/</link>
+            <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://curtisbridges.com/running-jekyll-using-docker/</guid>
+            <description>&lt;p&gt;Ruby and I don&amp;rsquo;t get along.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Ruby and I don&rsquo;t get along.</p>
+<p>I tried several methods to get a proper Jekyll install working on my dev computer. I&rsquo;m not a ruby person; eventually, I could have figured it out. I wanted a better solution than having to learn enough of the ruby ecosystem and hoping that I would remember enough long-term to keep it stable on my system.</p>
+<p>I tried using the macOS default ruby (which is a bit out of date, of course). I tried installing the latest via homebrew (and got close to a working solution) and I didn&rsquo;t even try installing <code>rbenv</code> or <code>rvm</code> since I only wanted a working jekyll.</p>
+<p>Enter: Docker.</p>
+<p>Docker allows you to use pre-canned images for all sorts of purposes. I was sure I could find an image that fit my use case &ndash; I was sure it wasn&rsquo;t all that unique.</p>
+<ol>
+<li>Install Docker using homebrew:</li>
+</ol>
+<pre><code>brew cask install docker
+</code></pre><ul>
+<li>Note: <code>brew install docker</code> lacks the docker daemon, which is usually provided by VirtualBox. See: <a href="https://stackoverflow.com/a/40523608/6385823">https://stackoverflow.com/a/40523608/6385823</a></li>
+</ul>
+<p>We want a working Docker on our system and the easiest path to that is the <a href="https://hub.docker.com/editions/community/docker-ce-desktop-mac">Docker Desktop for Mac</a>. As with all my installs, I prefer to use homebrew or homebrew casks when they are available.</p>
+<ol start="2">
+<li>Create a new jekyll site in current directory:</li>
+</ol>
+<pre><code>docker run --rm --volume=&quot;$PWD:/srv/jekyll&quot; -it jekyll/jekyll jekyll new .
+</code></pre><ol start="3">
+<li>Install all jekyll dependencies in the Docker container:</li>
+</ol>
+<pre><code>docker run --rm --volume=&quot;$PWD:/srv/jekyll&quot; -it jekyll/jekyll jekyll build
+</code></pre><ol start="4">
+<li>Run jekyll server as a Docker container:</li>
+</ol>
+<pre><code>docker run --name newblog --volume=&quot;$PWD:/srv/jekyll&quot; -p 4000:4000 -it jekyll/jekyll jekyll serve --watch --drafts
+</code></pre><p>The <code>--name</code> option can be any unique string; I chose <code>newblog</code> as the example used here.</p>
+<ol start="5">
+<li>
+<p>Open your browser to <a href="http://0.0.0.0:4000">http://0.0.0.0:4000</a>
+Localhost will also work rather than the Docker specific 0.0.0.0.</p>
+</li>
+<li>
+<p>Hot reload changes:</p>
+</li>
+</ol>
+<pre><code>docker restart newblog
+</code></pre><p>Since the jekyll container is launched with the <code>--watch</code> flag, it should update as content is modified. However, if there are configuration changes, you might have to restart the container.</p>
+<ol start="7">
+<li>Removing the container:</li>
+</ol>
+<pre><code>docker rm -f newblog
+</code></pre><p>Most helpful site when trying to achieve this task: <a href="https://ddewaele.github.io/running-jekyll-in-docker/">https://ddewaele.github.io/running-jekyll-in-docker/</a></p>]]></content>
+        </item>
+        
+        <item>
+            <title>Firsts</title>
+            <link>https://curtisbridges.com/firsts/</link>
+            <pubDate>Tue, 18 Jul 2017 00:00:00 +0000</pubDate>
+            
+            <guid>https://curtisbridges.com/firsts/</guid>
+            <description>&lt;p&gt;I&#39;ve been reading Ray Bradbury&#39;s &lt;a href=&#34;http://amzn.to/2tm3XGF&#34;&gt;Zen in The Art of Writing&lt;/a&gt;. Books written by authors about writing always affect me the same way &amp;ndash; I get incredibly excited about the process and product of creation.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>I've been reading Ray Bradbury's <a href="http://amzn.to/2tm3XGF">Zen in The Art of Writing</a>. Books written by authors about writing always affect me the same way &ndash; I get incredibly excited about the process and product of creation.</p>
+<p>In Bradbury&rsquo;s case, this also holds true; his book is a call to arms. Anyone with an interest in writing can find wisdom in his words and methods.</p>]]></content>
+        </item>
+        
+        <item>
+            <title>Raven Intelligence</title>
+            <link>https://curtisbridges.com/raven-intelligence/</link>
+            <pubDate>Tue, 18 Jul 2017 00:00:00 +0000</pubDate>
+            
+            <guid>https://curtisbridges.com/raven-intelligence/</guid>
+            <description>&lt;blockquote&gt;
+&lt;p&gt;Ravens can plan for future needs that they never encounter in nature, suggesting intelligence may arise predictably from conditions that occurred multiple times across the tree of life.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We&amp;rsquo;ve only just begun to explore intelligence in other species, and yet, we are constantly surprised by their capacity to think.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<blockquote>
+<p>Ravens can plan for future needs that they never encounter in nature, suggesting intelligence may arise predictably from conditions that occurred multiple times across the tree of life.</p>
+</blockquote>
+<p>We&rsquo;ve only just begun to explore intelligence in other species, and yet, we are constantly surprised by their capacity to think.</p>]]></content>
+        </item>
+        
+        <item>
+            <title>First Post</title>
+            <link>https://curtisbridges.com/first-post/</link>
+            <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
+            
+            <guid>https://curtisbridges.com/first-post/</guid>
+            <description>&lt;p&gt;This is the first post of my new site. I&amp;rsquo;m looking to post thoughts, opinions, and links from around the web, book reviews, my current projects from GitHub and my online portfolio.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>This is the first post of my new site. I&rsquo;m looking to post thoughts, opinions, and links from around the web, book reviews, my current projects from GitHub and my online portfolio.</p>
+<p>I&rsquo;ll also be posting about my continued learning with coding projects, some will be iOS learning and others will be web-based technologies.</p>
+<p>Look for more here in the future.</p>]]></content>
+        </item>
+        
+        <item>
+            <title>Big Nerd Ranch, Beginning iOS - Day 7</title>
+            <link>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-7/</link>
+            <pubDate>Sun, 19 Oct 2014 00:00:00 +0000</pubDate>
+            
+            <guid>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-7/</guid>
+            <description>&lt;p&gt;Day 7 was very different from the previous days at the Ranch. It is mostly a catch-all day for miscellaneous topics that came up throughout the week as well as a discussion on tools.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Day 7 was very different from the previous days at the Ranch. It is mostly a catch-all day for miscellaneous topics that came up throughout the week as well as a discussion on tools.</p>
+<p>I was impressed by some of the built in features of both Xcode, the debugger, and instrumentation. In particular, I was shocked by all the options available for debugging with breakpoints; conditional breakpoints, computer speach of pre-defined text triggered from breakpoints, and many other options.</p>
+<p>Next we reviewed memory leak analysis using Instrument templates. We worked through a fairly contrived (but relevant) example where the tools correctly found an ARC leak.</p>
+<p>The rest of the day was picking up random topics of interest. Christian demonstrated some of his techniques of debugging Auto Layout constraints with Size Classes by setting the canvas in free form mode and resizing it to see how the layout behaves. I’ve used this technique for years for correctly developing desktop applications with resizable windows so I’m very glad to see it replicated in the iOS tools. While he was at it, we saw a demonstration for constraint inequalities and how they affect animation, which led perfectly into the next topic…</p>
+<p>Animations.</p>
+<p>I was impressed with how easy iOS makes animating interface elements. In a lot of cases, it can simply be achieved via a call to:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">UIView.animateWithDuration(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#66d9ef">_</span>: animations: () -&gt; ())
+<span style="color:#75715e">// with a start state before the call and the desired end state within the closure.</span>
+<span style="color:#75715e">// There we variations on this as well such as Spring animations:</span>
+
+UIView.animateWithDuration(<span style="color:#ae81ff">0.6</span>, delay: <span style="color:#ae81ff">0.0</span>, usingSpringWithDampening: <span style="color:#ae81ff">0.2</span>, initialSpringVelocity: <span style="color:#ae81ff">0.0</span>,
+    options: UIViewAnimationOptions.something, animations: { () -&gt; Void <span style="color:#66d9ef">in</span>
+        <span style="color:#75715e">// .. finishing code</span>
+        }, completion: <span style="color:#66d9ef">nil</span>)
+
+<span style="color:#75715e">// And keyframe animations:</span>
+<span style="color:#66d9ef">override</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">touchesEnded</span>(touches: NSSet, withEvent event: UIEVent) {
+    <span style="color:#66d9ef">let</span> touch = touches.anyObject() <span style="color:#66d9ef">as</span> UITouch
+    <span style="color:#66d9ef">let</span> loc = touch.locationInView(view)
+
+    <span style="color:#75715e">// Update constraints outside of animation closure</span>
+    topConstraint.constant = loc.y
+
+    UIView.animateWithDuration(<span style="color:#ae81ff">0.5</span>, animations: { () -&gt; Void <span style="color:#66d9ef">in</span>
+        <span style="color:#75715e">// Re-layout views inside animation closure</span>
+        <span style="color:#66d9ef">self</span>.view.layoutIfNeeded()
+
+        <span style="color:#75715e">// Update view properties inside animation closure</span>
+        <span style="color:#66d9ef">self</span>.view.backgroundColor = UIColor.redColor()
+    })
+}
+</code></pre></div><p>Finally, we picked up a topic covered in older editions of the book, location. I’m pleased we covered this topic, as it is something almost completely unique to the platform and something I hope to become familiar with soon (I like to jog).</p>
+<p>Our simple example in Swift:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">CoreLocation</span>
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">MapKit</span>
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">UIKit</span>
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ViewController</span>: UIViewController, CLLocationManagerDelegate {
+    <span style="color:#66d9ef">@IBOutlet</span> <span style="color:#66d9ef">weak</span> <span style="color:#66d9ef">var</span> mapView: MKMapView!
+    <span style="color:#66d9ef">let</span> locationManager = CLLocationManager()
+
+    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">viewDidLoad</span>() {
+        <span style="color:#66d9ef">super</span>.viewDidLoad()
+
+        locationmanager.requestWhenInUseAuthorization()
+
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.distanceFilter = <span style="color:#ae81ff">10.0</span> <span style="color:#75715e">// how far the user needs to move before you get updates</span>
+        locationManager.delegate = <span style="color:#66d9ef">self</span>
+        locationManager.startUpdateingLocation()
+    }
+
+    <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">locationManager</span>(manager: CLLOcationManager!, didUpdateLocations locations: [AnyObject]<span style="color:#f92672">!</span>) {
+        println(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">\(</span>locations<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
+
+        <span style="color:#75715e">// CLLocation: coordinate, altitude, horizontal and vertical accuracy</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> currentLocation = locations.last <span style="color:#66d9ef">as</span>? CLLocation {
+            <span style="color:#75715e">// We found a location</span>
+            mapView.setCenterCoordinate(currentLocation.coordinate, animated: <span style="color:#66d9ef">true</span>)
+
+            <span style="color:#66d9ef">let</span> span = MKCoordinateRegionMake(<span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">0.01</span>)
+            <span style="color:#66d9ef">let</span> region = MKCoordinateRegionMake(currentLocation.coordinate, span)
+            mapView.setRegion(region, animated: <span style="color:#66d9ef">true</span>)
+
+            <span style="color:#66d9ef">if</span> currentLocation.horizontalAccuracy <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">20.0</span> {
+                manager.stopUpdatingLocation()
+            }
+        }
+    }
+
+    <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">locationManager</span>(manager: CLLocationManager!, didFailWithError error: NSError!) {
+        println(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">\(</span>error<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
+    }
+}
+</code></pre></div><p>And so ended my Big Nerd Ranch course. It was such an incredible experience and I highly recommend anyone interested in one of the course topics taught by Big Nerd Ranch to give them serious consideration; the environment is completely unique and they certainly aren’t lying when they say it is “monastic like”. The lack of external distractions of the real world certainly went a long way in helping become immersed in the material.</p>
+<p>I hope to put it to good use soon.</p>]]></content>
+        </item>
+        
+        <item>
+            <title>Big Nerd Ranch, Beginning iOS - Day 6</title>
+            <link>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-6/</link>
+            <pubDate>Sat, 18 Oct 2014 00:00:00 +0000</pubDate>
+            
+            <guid>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-6/</guid>
+            <description>&lt;p&gt;Day 6 has come and gone and the amount of code and hours involved with this training is starting to take its toll on the level of energy.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Day 6 has come and gone and the amount of code and hours involved with this training is starting to take its toll on the level of energy.</p>
+<p>That said, the day starts off with some really interesting topics that help invigorate me personally. Storyboards are something that Apple appears to be pushing more of late and I think are the most efficient future of iOS UI development.</p>
+<p>Like the smaller level user interface elements such as views, buttons, and labels – Storyboards’ interactions feel natural in Interface Builder. Placing constraints isn’t bad but adjusting them or handling different size classes feels is awkward. Hopefully, these workflows can be refined over time.</p>
+<p>We also covered connecting to web services, which is incredibly useful in today’s cloud-based world, particularly in the mobile. It was good to learn how iOS and Swift handles web requests and JSON parsing if not exactly fun coding.</p>
+<p>One of the unique experiences offered on this trip is zip lining at Banning Mills. A few of us signed up for the one slot set aside for it this week and had a blast. I can admit to having some shaking knees while standing at the top of the launch towers but zipping down the steel cables felt surprisingly relaxing. This is such a great experience, I hope everyone takes this opportunity if given the chance.</p>
+<p>Lastly, we covered touch events and ended gesture recognizers. I really like how these features are implemented, very concise and elegant. We built a gesture-based primitive drawing app around these concepts and it was quite satisfying.</p>
+<p>The Patriots played a Thursday night game, which many of us gathered around the TV in the main lodge area to chat, have a beverage, and take a night off from coding. The game finished on the final play — a blocked field goal so it was a late night for me. Probably not a great idea given the level of tiredness I was already experiencing.</p>
+<p>It is all worth it.</p>]]></content>
+        </item>
+        
+        <item>
+            <title>Big Nerd Ranch, Beginning iOS - Day 5</title>
+            <link>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-5/</link>
+            <pubDate>Fri, 17 Oct 2014 00:00:00 +0000</pubDate>
+            
+            <guid>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-5/</guid>
+            <description>&lt;p&gt;Day 5 continued, once again, where the previous day left off – which is to say, more user interface topics.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Day 5 continued, once again, where the previous day left off – which is to say, more user interface topics.</p>
+<p>We dove right in to Auto Layout, using contraints to dynamically control the layout of our user interface elements on the screen. Along the way, Christian showed us some common mistakes and the corresponding errors displayed in Interface Builder or the app console and how to fix them. It is amazing to me how much more polished an app looks when it behaves and looks correct on different devices and orientations.</p>
+<p>We then explored how to do Auto Layout programmatically. I didn’t even think this was possible. I’m not sure I’ll want to attempt it in very many situations but I’m sure there will be times when it is potentially necessary. Time will tell.</p>
+<p>Once we moved on from the basics of Auto Layout, we moved into Size Classes which allow you to dynamically change the layout of your app dramatically based upon the size of the platform it is running. It is a mobile developer’s version of responsive design. It makes a huge difference in the usability of an app to efficiently use the space available to it on each platform and orientation.</p>
+<p>The complexity of both Auto Layout and Size Classes will require lots of post-class experimentation to truly feel comfortable with, but for now, I understand the basics.</p>
+<p>In the afternoon, we went for our usual walk but it turned into a mini-adventure. We walked down the river to the old Banning Mill, which happened to be on the other side of the river. Since we were there, a few of us crossed the river via some exposed rocks which quickly turned into the entire class. Christian said he had only had one other student in passed classes cross and yet there were seven of us that did on this trip. There was some rough terrain coming back but it was fun and good exercise. I think a few people got more than they had bargained for.</p>
+<p>Finally for Day 5, we moved on to Core Data. For the first time in the class, I was relatively uninterested in a topic. I recognize the power of the technology but for my immediate purposes, I’d rather explore other topics. I decided to take my first break on this chapter. Every chapter prior to this one, not only did I do the core example, I had done all the suggested challenges. Some chapters, I had even added some of my own user interface touches to the app but this chapter was a good time to take a short break.</p>
+<p>Tomorrow should be another good day – storyboards, web services, gestures, and more.</p>]]></content>
+        </item>
+        
+        <item>
+            <title>Big Nerd Ranch, Beginning iOS - Day 4</title>
+            <link>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-4/</link>
+            <pubDate>Thu, 16 Oct 2014 00:00:00 +0000</pubDate>
+            
+            <guid>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-4/</guid>
+            <description>&lt;p&gt;Coming off yesterday’s high, I was very much looking forward to today.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Coming off yesterday’s high, I was very much looking forward to today.</p>
+<p>Today started an entirely new project, a home inventory app. This app is designed with a table view, a control used constantly in iOS apps and within iOS itself. Given its widespread use, this is an important day of hands-on training.</p>
+<p>I found the control to be interesting but not entirely what I was expecting; I’ve used a lot of table controls in prior UI implementation, but it is a little different on iOS. Most tables have a variable amount of columns as well as rows on other platforms – on iOS it appears that tables have a single column and rows themselves are designed around a single control of your design. This design can include “column-like” structures but aren’t required to look like columns. This makes UITableView something entirely different to me. It certainly allows for some rich display of items but isn’t exactly like a traditional spreadsheet design.</p>
+<p>Another interesting aspect of UITableView are the other parts of the control – headers, footers, and even a notion of sections. Christian (the instructor) pointed out how iOS’s Settings app uses sections. This certainly makes for some different takes on the design of an application.</p>
+<p>We then learned some CRUD (Create, Read, Update, Delete) operations on tables. iOS does some interesting things when it comes to efficiency of UI display by reusing cells when it can. The rest was pretty typical stuff.</p>
+<p>Next, we added a navigation control to our design. This control is fundamental to mobile app design, as it allows a hierarchy of views to be navigated and have a standard “back” button to return from “drill down” views. The drill-down view for our table view of inventory items was a detailed view of an item. This showed name, serial number, value and date created. To this view, we eventually added a toolbar that linked to the camera app using the system’s camera button and eventually made it also allow editing of the photo selected. This detailed item view then displayed the selected photo.</p>
+<p>Lastly, we tied the app into system events so our inventory could be persisted to disk. At this point, you have a reasonable app’s functionality. Tomorrow will involve Auto Layout to clean up some of the visual aspects of the app to add a significant amount of polish.</p>
+<p>This has been a great experience so far and I truly feel like we’ve gained a a broad spectrum of the core of iOS development already.</p>]]></content>
+        </item>
+        
+        <item>
+            <title>Big Nerd Ranch, Beginning iOS - Day 3</title>
+            <link>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-3/</link>
+            <pubDate>Wed, 15 Oct 2014 00:00:00 +0000</pubDate>
+            
+            <guid>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-3/</guid>
+            <description>&lt;p&gt;Day 3 is a key day for this course: this is when we first get into the frameworks and APIs that allow us to actually program for iOS.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I was not disappointed.&lt;/strong&gt;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Day 3 is a key day for this course: this is when we first get into the frameworks and APIs that allow us to actually program for iOS.</p>
+<p><strong>I was not disappointed.</strong></p>
+<p>We immediately dove right in and created a new iOS app project. To start, it was just a simple quiz design, with two labels and two buttons; hitting the question button would display one of the preloaded questions on the question label and hitting the answer button displays the corresponding answer on the answer label. Simple, but effective in learning some of the basics of the tools and two basic ui controls.</p>
+<p>Once the introduction project was completed, we moved on to creating our own custom control that drew its own visualization on the screen using lower level drawing functions. This is a good project because you can immediately see possibilities on how this could be used in our own projects in the future. This project finished with a challenge to place an image on the screen which added a bit of polish.</p>
+<p>This project continued in the next chapter, and taught us how to handle scrolling, zooming, and paging. All necessary concepts in UI development.</p>
+<p>Next, we added a tab bar controller – a very common view controller in iOS applications. Looking at the results, you can finally see that you’ve learned some of the basics of iOS programming at this point. This is a great feeling to end Day 3.</p>
+<p>I’m very much looking forward to tomorrow.</p>]]></content>
+        </item>
+        
+        <item>
+            <title>Big Nerd Ranch, Beginning iOS - Day 2</title>
+            <link>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-2/</link>
+            <pubDate>Tue, 14 Oct 2014 00:00:00 +0000</pubDate>
+            
+            <guid>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-2/</guid>
+            <description>&lt;p&gt;The second day of courses really expands upon the basics learned in the pre-reading and day 1 content.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>The second day of courses really expands upon the basics learned in the pre-reading and day 1 content.</p>
+<p>It mostly is centered around the object oriented parts of the language such as structs and classes, their properties and initializers, protocols (interfaces) and generics. Swift also adds the concept of extensions and carries forward Apple’s Objective-C automatic reference counting (ARC).</p>
+<p>Many of these concepts are liberally borrowed from another languages and environments but have their own Swift spin on the concept. I haven’t used a concept of extensions before, and it is both awesome and scary. Extensions allow you to do what its name implies: extend existing constructs to add functionality; this isn’t inheritance, it is more like genetically altering nature globally. Like I said; great… and scary.</p>
+<p>After a twelve hour day, my brain is fried but there’s a smile on my face.</p>
+<p>As I said yesterday, I’m taking notes on the slides and instruction being presented each day. I’m using two tools for note-taking this week: TextMate and Marked 2. I chose to write in Markdown for several reasons:</p>
+<ol>
+<li>I needed to learn Markdown since it is so widely used.</li>
+<li>I wanted my notes easily searchable through as many means as possible. (grep, Spotlight… everything)</li>
+<li>I wanted to evaluate some of the associated tools such as Marked 2</li>
+</ol>
+<p>Xcode has had some rough edges during the development process, which is not surprising given the rapid rate of development and features added recently. Most of the (admittedly minor) issues involved a few warts with Playgrounds but nothing that couldn’t be coded around.</p>
+<p>I’m really enjoying the content and the instructors. This is exactly the experience I was hoping for.</p>]]></content>
+        </item>
+        
+        <item>
+            <title>Big Nerd Ranch, Beginning iOS - Day 1</title>
+            <link>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-1/</link>
+            <pubDate>Mon, 13 Oct 2014 00:00:00 +0000</pubDate>
+            
+            <guid>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-1/</guid>
+            <description>&lt;p&gt;Day 1 picks up after the pre-reading with more basic programming language constructs common to other languages. Arrays, dictionaries, functions, and enumerations. In addition, Swift adds a few more concepts that I have not used professionally yet – Ooptionals and closures.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Day 1 picks up after the pre-reading with more basic programming language constructs common to other languages. Arrays, dictionaries, functions, and enumerations. In addition, Swift adds a few more concepts that I have not used professionally yet – Ooptionals and closures.</p>
+<p>The instructors at Big Nerd Ranch really encourage you to type out all the example code in the chapter as it helps reinforce the concepts being introduced. I’m taking the approach that if typing the examples is good then typing the example code and the slides should be better. Hopefully RSI doesn’t creep in by the end of the week…</p>
+<p>We spend the day getting short lectures to introduce a chapter in the unreleased Big Nerd Ranch Swift book, follow by reading the chapter just introduced, and working the examples. At the end of each chapter is typically 1-3 coding challenges to extend the examples in the chapter. Since you can get by simply typing in the example code verbatim, I really like that the challenges don’t provide a solution; you’re on your own, just like the “real world”.</p>
+<p>I believe I have a good grasp on most of today’s instruction, although the finer points of closures will warrant some deeper exploration to truly grasp to their fullest.</p>
+<p>After a 10 hour day of mostly coding, reading, and instruction… I’m exhausted. But loving every minute of it.</p>]]></content>
+        </item>
+        
+        <item>
+            <title>Big Nerd Ranch, Beginning iOS - Day 0</title>
+            <link>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-0/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            
+            <guid>https://curtisbridges.com/big-nerd-ranch-beginning-ios-day-0/</guid>
+            <description>&lt;p&gt;This week, I’ll be participating in an offsite training program developed by Big Nerd Ranch outside of Atlanta, Georgia.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>This week, I’ll be participating in an offsite training program developed by Big Nerd Ranch outside of Atlanta, Georgia.</p>
+<p>I’m very much looking forward to some dedicated learning and programming time since it is so hard to come by in my typical day-to-day life. I’ll be basking in the glory of 7 days of classroom learning, programming labs, and projects.</p>
+<p>The course is centered around learning the iOS frameworks, Xcode, and the Apple development process. We received a good surprise shortly before leaving this week – we’ll be the first public offering of this course using the Swift programming language. I’m not sure I could have planned this any better, we’ll be as fluent in Swift as anybody outside of Apple employees and established iOS developers on the cutting edge.</p>
+<p>The pre-reading involved the first eight chapters of the unreleased Swift book, which covered the basics of any language: types, control structures, and looping. Information provided by Big Nerd Ranch also requested we bring provisioned iOS devices, which I verified by deploying an empty Swift project to my iPhone 6.</p>
+<p>Travel to Atlanta was uneventful, I had a pleasant flight down where I just happened to be seated with my daughter’s pediatrician. I spent a few hours in Atlanta’s airport waiting for the first shuttle time and was surprised how far outside of Atlanta the Big Nerd Ranch site was – a 45 minute ride.</p>
+<p>Historic Banning Mills is a nice, rustic atmosphere. I’m not sure my wife would like how rustic it really is but it is a good setting for classroom learning, lacking the distractions of daily life. There are some of the basic amenities of a retreat such as massages, and facials but none of that is for me. What is very interesting is the advent of zip lines. They market them as Guinness World Record zip lines and I hope to use them at some point this week.</p>
+<p>We settled in our classroom and then had a good dinner. I can’t wait to get started!</p>]]></content>
+        </item>
+        
+    </channel>
+</rss>
